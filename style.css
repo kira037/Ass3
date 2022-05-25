@@ -1,7 +1,8 @@
 body{
     background-image: url('home_guitar.png');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 70%;
+    background-position-y: 90px;
     margin:0px;
     margin-top:60px;
     padding: 0px;
@@ -94,9 +95,13 @@ body{
   
 
 .doglogo_img{
-    width: 5%;
+    width: 3%;
     padding: 0%;
-    margin: 0%;
-    align-items: flex-start;  
+    margin: 2%;
+    align-items: flex-start; 
+    mix-blend-mode: multiply;
 }
 
+background-image{
+    margin-top: 10%;
+}
