@@ -1,9 +1,59 @@
 body{
+    background-image: url('home_guitar.png');
+    background-repeat: no-repeat;
+    background-size: auto;
     margin:0px;
     margin-top:60px;
     padding: 0px;
     background-color: #1C2427;
   }
+
+  :root {
+    --black: 
+  rgba(0, 0, 0, 1);
+      --background-blue: 
+  rgba(0, 73, 112, 1);
+    --allports-2: 
+  rgba(0, 111, 173, 1);
+  --light_blue:
+  #A2BCCC;    
+    --woodsmoke: 
+  rgba(16, 16, 16, 1);
+    --highlight-blue: 
+  rgba(49, 60, 202, 1);
+    --picton-blue: 
+  rgba(49, 181, 255, 1);
+    --screamin-green: 
+  rgba(62, 232, 102, 1);
+    --sinbad: 
+  rgba(158, 195, 212, 1);
+    --dove-gray: 
+  rgba(112, 112, 112, 1);
+
+    --font-size-xs: 13px;
+    --font-size-s: 16px;
+    --font-size-m: 20px;
+    --font-size-l: 32px;
+    --font-size-h: 55px;
+
+
+    --font-family-cardo: "Cardo";
+    --font-family-inkfree: "InkFree-Regular";
+    --font-family-maven_pro: "Maven Pro";
+  }
+
+  #title{
+    font-size: 55px;
+  }
+  
+  .page_name{
+
+      font-family:var(--font-family-inkfree);
+      color: aliceblue;
+      margin-left: 60%;
+      margin-top: 15%;
+  }
+
   
   nav{
     display: flex;
@@ -25,12 +75,17 @@ body{
   
   .left-links{
     flex:1 1 200px;
+    margin-left: 5%;
+  }
+
+  .right-links{
+    margin-right: 3%;
   }
 
   .links {
     display: inline-block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 30px;
     color: var(--black);
     text-decoration: none;
     font-size: 17px;
@@ -38,12 +93,10 @@ body{
   }
   
 
-
 .doglogo_img{
-    width: 3%;
+    width: 5%;
     padding: 0%;
     margin: 0%;
-    align-items: flex-start;
-    
+    align-items: flex-start;  
 }
 
