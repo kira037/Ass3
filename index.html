@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-    href="style.css"
-    <title>Bluedog_Guitars</title>
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -17,40 +14,41 @@
   </header>
   <main>
 
-    <nav class="nav">
-    <!--navigation bar-->
-      <div class="left-links">
+<!--nav bar-->
+    <nav class="topnav" id="myTopnav">
+      <div class="logo"> <a #="doglogo" href="index.html"><img src=doglogo.png class="doglogo_img">
+      </a></div>
+  
+    <a href="#home" class="active">Acoustic</a>
+    <a href="#news">Electric</a>
+    <a href="#contact">Pro Audio</a>
+    <a href="#about">Accessory</a>
+    <a href="#support">Support</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="icon_menu white.png">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+<!--nav bar-->
 
-        <a class="dog_logo" href="index.html"><img src=doglogo.png class="doglogo_img">
-        
-        </a>
-        <a class="links selected" href="product list.html">Acoustic</a>
-        <a class="links" href="product list.html"> Electric</a>
-        <a class="links" href="product list.html"> Pro Audio</a>
-        <a class="links" href="product list.html"> Accessory</a>
+<!--nav bar responsive js-->
+<script src="navbar.js"></script> 
+<!--nav bar js-->
 
-      </div>
-
-
-      <div class="right-links">
-
-        <a class="links" href="#"> Contact</a>
-        <a class="links" href="#">Support</a>
-        <a class="links" href="#">About</a>
-
-      </div>
-
-    </nav>
-
+<div class="intro">
     <div class="page_name">
       <h1 #="title">Bluedog Guitars</h1>
       <h2>A Candy Shop for Guitar Lovers</h2>
     </div>
+<!-- quick link -->
+    <table>
+      <td><p class="link_to_shop">Visit Our Collection</p></td>
+      <td><p class="link_to_vr">See Our Shop</p></td>
+    </table>
 
-    <div class="home_guitar_img">
-      <img src="url('home_guitar.png')">
+</div>
 
-    </div>
 </main>
 </body>
 
