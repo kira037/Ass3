@@ -4,52 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- general css for whole page-->
     <link rel="stylesheet" href="style.css">
-
+    
+    <!--nav bar responsive js-->
+    <script src="navbar.js"></script> 
 </head>
+
 
 <body>
   <header>
-<!--place search and chart icon-->
+  <!--place search and chart icon-->
   </header>
-  <main>
-
-<!--nav bar-->
-    <nav class="topnav" id="myTopnav">
-      <div class="logo"> <a #="doglogo" href="index.html"><img src=doglogo.png class="doglogo_img">
-      </a></div>
   
-    <a href="#home" class="active">Acoustic</a>
-    <a href="#news">Electric</a>
-    <a href="#contact">Pro Audio</a>
-    <a href="#about">Accessory</a>
-    <a href="#support">Support</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="icon_menu white.png">
-      <i class="fa fa-bars"></i>
-    </a>
-  </nav>
-<!--nav bar-->
 
-<!--nav bar responsive js-->
-<script src="navbar.js"></script> 
-<!--nav bar js-->
+  <main>
+    <!--first section-->
+    <section class="first-section">
 
-  <div class="intro">
-    <div class="page_name">
-      <h1 #="title">Bluedog Guitars</h1>
-      <h2>A Candy Shop for Guitar Lovers</h2>
-    </div>
-<!-- quick link -->
-    <table>
-      <td><p class="link_to_shop">Visit Our Collection</p></td>
-      <td><p class="link_to_vr">See Our Shop</p></td>
-    </table>
+      <!--nav bar-->
+      <nav class="topnav" id="myTopnav">
 
+        <div class="logo"> <a #="doglogo" href="index.html"><img src=doglogo.png class="doglogo_img"></a>
+       </div>
+        <a href="product list.html" class="active">Acoustic</a>
+        <a href="product list.html">Electric</a>
+       <a href="product list.html">Pro Audio</a>
+       <a href="product list.html">Accessory</a>
+       <a href="#support">Support</a>
+       <a href="#contact">Contact</a>
+       <a href="#about">About</a>
+       <a href="javascript:void(0);" class="icon" onclick="responsiveNav()"><img src="icon_menu white.png">
+       <i class="fa fa-bars"></i>
+       </a>
+
+       </nav>
+
+
+
+      <!--intro to the website-->
+      <div class="intro">
+
+        <div class="page_name">
+        <h1 #="title">Bluedog Guitars</h1>
+        <h2>A Candy Shop for Guitar Lovers</h2>
+        </div>
+
+        <!-- quick link -->
+        <table class="quick link">
+        <td href="product list.html"><p class="link_to_shop">Visit Our Collection</p></td>
+        <td><button onclick="vrFunction()" id="vrBtn" title="vr" class="link_to_vr">See Our Shop</button></td>
+        <script>
+        function vrFunction() {
+      document.getElementById('vr').scrollIntoView({ behavior: 'smooth', block: 'center' })
+      };
+        </script>
+        </table>
+
+       </div>
+
+  </section>
+
+
+  <!--second section-->
+  <section class="second-section">
+
+    <!--div holding all element-->
+    <div class="feature_product">
+      
+      <!--section heading-->
+      <h3>Featured Product</h3>
+      
+      <!--grid container of 3 column of feature prodct-->
+      <div class="grid-container">
+        
+        <!--product 1-->
+        <div class="grid-item" #="item1">
+          <article class="grid-product">
+            <img src="image/acoustic guitar.png" class="product-image">
+            <p>Product Name</p>
+            <p>$3,499</p>
+            <button onclick="viewFunction()" id="viewBtn" class="view">Learn More</button>
+          </article>
+        </div>
+
+        <!--product 2-->
+        <div class="grid-item" #="item2">
+          <article>
+            <img src="image/acoustic guitar.png" class="product-image">
+            <p>Product Name</p>
+            <p>$3,499</p>
+            <button onclick="viewFunction()" id="viewBtn" class="view">Learn More</button>
+          </article>
+        </div>
+
+        <!--product 3-->
+        <div class="grid-item" #="item3">
+          <article>
+            <img src="image/acoustic guitar.png" class="product-image">
+            <p>Product Name</p>
+            <p>$3,499</p>
+            <button onclick="viewFunction()" id="viewBtn" class="view">Learn More</button>
+          </article>
+        </div>
+
+      </div><!--container closing-->
+    </div><!--feature product closing-->
+
+</section>
+
+<section class="thirs-section">
+  <h3>News</h3>
+</section>
+
+<section class="forth-section">
+<div #="vr">
 </div>
+</section>
 
 </main>
+
+<footer></footer>
+
 </body>
 
 </html>
