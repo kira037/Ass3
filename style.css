@@ -434,6 +434,10 @@ table{
   margin-top: 3%;
 }
 
+footer td{
+  color: rgba(255, 255, 255, 0.845);
+  font-weight: 10;
+}
 
 footer td, th{
   padding-top: 1%;
