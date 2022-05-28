@@ -52,6 +52,10 @@ body{
     background-color: #1C2427;
   }
 
+
+
+
+
 /* Layout of search icon and cart icon*/
 
 .header-icon{
@@ -60,13 +64,22 @@ body{
 
 .cart{
   width: 45px;
-  padding: 5px 30px 5px 35px;
+  margin: 5px 30px 5px 35px;
+  cursor: pointer;
 }
 
 .search{
   width: 40px;
-  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
 }
+
+/* end of layout of search icon and cart icon*/
+
+
+
+
+
 
 
 /*section 1 nav bar general intro*/
@@ -374,12 +387,14 @@ display:block;
 }
 
 .play-icon{
+  padding: 3%;
   width: 3%;
   align-self: center;
   position:absolute;
   right: 47%;
   z-index: 2;
   margin-top: 14%;
+  cursor: pointer;
 }
 
 
@@ -390,13 +405,67 @@ display:block;
     border: none;
     background-color: #757777ec; 
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding:  3% 50%; 
+    padding:  2% 50%; 
     font-size: 13px; 
     text-decoration: none;
     text-transform: capitalize;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 #myBtn:hover {
   background-color: #7577777c; /* Add a dark-grey background on hover */
+}
+
+/*end of section 4-vr shop tour*/
+
+
+
+
+
+/*footer*/
+footer{
+  margin-top: 5%;
+  text-align: center;
+  color: aliceblue;
+}
+
+table{
+  text-align: left;
+  margin-top: 3%;
+}
+
+tr{
+  padding-left: 5%;
+}
+
+footer td, th{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 130px;
+  padding-right: 140px;
+}
+
+th {
+  text-transform: uppercase;
+  border-bottom: 100px ;
+  border-color: white;
+  padding-bottom: 3%;
+}
+
+.social-media-icon{
+  width: 30%;
+  max-width: 200px;
+}
+
+@media (max-width: 1100px) {
+  footer td, th{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  th {
+    padding-bottom: 3%;
+  }
+
 }

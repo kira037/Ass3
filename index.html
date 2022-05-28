@@ -45,10 +45,10 @@
 <body>
   <header>
 
-  <!--place search and chart icon-->
+  <!--search and chart icon-->
     <div class="header-icon">
-      <img src="icon/search-icon.png" class="search">
-      <img src="icon/cart-icon.png" class="cart">
+      <img src="icon/search-icon.png" class="search" >
+      <img src="icon/cart-icon.png" class="cart" onclick="cartFunction()">
     </div>
 
   </header>
@@ -89,8 +89,8 @@
 
         <!-- quick link -->
         <table class="quick link">
-        <td href="product list.html"><p class="link_to_shop">Visit Our Collection</p></td>
-        <td><button onclick="vrFunction()" id="vrBtn" class="link_to_vr">See Our Shop</button></td>
+        <td href="product list.html" #="first"><p class="link_to_shop">Visit Our Collection</p></td>
+        <td #="first"><button onclick="vrFunction()" id="vrBtn" class="link_to_vr">See Our Shop</button></td>
         </table>
 
        </div>
@@ -223,9 +223,54 @@
 
     </section>
 
-</main>
+  </main>
 
-<footer></footer>
+  <footer>
+    <h1>Bluedog Guitars</h1>
+    <img src="icon/social media.png" class="social-media-icon">
+    <div class="footer-div">
+      <table class="center" align="center">
+
+        <tr class="head-row">
+          
+          <th><div style=
+            "border: solid 0 rgba(0, 111, 173, 1); border-left-width:3px; padding-left:0.5ex">
+             SHOP</div></th>
+          <th><div style=
+            "border: solid 0 rgba(0, 111, 173, 1); border-left-width:3px; padding-left:0.5ex">
+             SUPPORT</div></th>
+          <th><div style=
+            "border: solid 0 rgba(0, 111, 173, 1); border-left-width:3px; padding-left:0.5ex">
+             about</div></th>
+        </tr>
+      
+        <tr>
+          <td>Acoustic</td>
+          <td>Contact Us</td>
+          <td>story</td>
+        </tr>
+      
+       <tr>
+          <td>Electric</td>
+          <td>Return Terms</td>
+          <td>Team</td>
+        </tr>
+
+        <tr>
+          <td>Accessory</td>
+          <td>Gift Cards</td>
+          <td>Photo</td>
+        </tr>
+
+        <tr>
+          <td>Pro Audio</td>
+          <td></td>
+           <td>Review</td>
+        </tr>
+      </table>
+    </div>
+
+  </footer>
 
 </body>
 
