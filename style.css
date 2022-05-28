@@ -1,5 +1,44 @@
+
+/* General reference of style*/
+:root {
+  --black: 
+rgba(0, 0, 0, 1);
+    --background-blue: 
+rgba(0, 73, 112, 1);
+  --allports-2: 
+rgba(0, 111, 173, 1);
+--light_blue:
+#A2BCCC;    
+  --woodsmoke: 
+rgba(16, 16, 16, 1);
+  --highlight-blue: 
+rgba(49, 60, 202, 1);
+  --picton-blue: 
+rgba(49, 181, 255, 1);
+  --screamin-green: 
+rgba(62, 232, 102, 1);
+  --sinbad: 
+rgba(158, 195, 212, 1);
+  --dove-gray: 
+rgba(112, 112, 112, 1);
+
+  --font-size-xs: 13px;
+  --font-size-s: 16px;
+  --font-size-m: 20px;
+  --font-size-l: 32px;
+  --font-size-h: 55px;
+
+  --font-family-cardo: "Cardo";
+  --font-family-inkfree: "InkFree-Regular";
+  --font-family-maven_pro: "Maven Pro";
+}
+/* end of general reference of style*/
+
+
+
+
+/* Gradient background, combination of colour and image*/
 body{
-    /* Gradient background, combination of colour and image*/
     background-image: linear-gradient(to right, #1c242700,rgba(28, 36, 39, 0.941),#000000),url('image/home_guitar.png');
     background-repeat: no-repeat;
     background-size:contain;
@@ -8,45 +47,29 @@ body{
     background-blend-mode:lighten;
     background-position-y: 110px;
     margin:0px;
-    margin-top:50px;
+    margin-top:0px;
     padding: 0px;
     background-color: #1C2427;
   }
 
-  :root {
-    --black: 
-  rgba(0, 0, 0, 1);
-      --background-blue: 
-  rgba(0, 73, 112, 1);
-    --allports-2: 
-  rgba(0, 111, 173, 1);
-  --light_blue:
-  #A2BCCC;    
-    --woodsmoke: 
-  rgba(16, 16, 16, 1);
-    --highlight-blue: 
-  rgba(49, 60, 202, 1);
-    --picton-blue: 
-  rgba(49, 181, 255, 1);
-    --screamin-green: 
-  rgba(62, 232, 102, 1);
-    --sinbad: 
-  rgba(158, 195, 212, 1);
-    --dove-gray: 
-  rgba(112, 112, 112, 1);
+/* Layout of search icon and cart icon*/
 
-    --font-size-xs: 13px;
-    --font-size-s: 16px;
-    --font-size-m: 20px;
-    --font-size-l: 32px;
-    --font-size-h: 55px;
+.header-icon{
+  text-align: right;
+}
 
-    --font-family-cardo: "Cardo";
-    --font-family-inkfree: "InkFree-Regular";
-    --font-family-maven_pro: "Maven Pro";
-  }
+.cart{
+  width: 45px;
+  padding: 5px 30px 5px 35px;
+}
+
+.search{
+  width: 40px;
+  padding: 5px;
+}
 
 
+/*section 1 nav bar general intro*/
 /* Navigation background*/
   .topnav {
     overflow:hidden;
@@ -163,6 +186,7 @@ body{
     text-decoration: underline;
 }
 
+/*quick link to see our shop format*/
 #vrBtn {
     font-family:var(--font-family-inkfree);
     color: aliceblue;
@@ -174,25 +198,26 @@ body{
     font-size: 17px; 
     text-decoration: underline;
   }
+/*end of section 1-nav bar general intro*/
+
+
+
+
+
 
   
- /* second section */
+ /* second section format and background*/
 .second-section{
     width: 100%;
-    height: 10%;
     background-color: #A2BCCC;
     margin-top: 10%;
-    padding-bottom: 12%;
+    padding-bottom: 7%;
 }
 
 .feature_product{
     padding: 5% 10%;
-   /* width: 1000px;
-    height: auto;*/
     position: relative;
     top: 0px;
-    /*flex-direction: row;
-    justify-content: space-between;*/
   }
 
 .grid-container {
@@ -201,22 +226,26 @@ body{
     justify-content: space-between;
   }
 
+/*format of each guitar grid for feature product*/
 .grid-item{
     padding: 3%;
     text-align: center;
 }
 
+/*background for each guitar in feature product*/
 article{
     background-color: #ADC1CD;
     width: 110%;
     height: 110%;
 }
 
+/*resizing and repositioning guitar image*/
 article>img{
 width: 80%;
 margin-top: 20%;
 }
 
+/*format of learn more button and read more button in section 3*/
 .view {
     font-family:var(--font-family-maven_pro);
     color: aliceblue;
@@ -229,34 +258,39 @@ margin-top: 20%;
     text-transform: capitalize;
   }
 
+/* when hover over learn more button, it changes color*/
 .view:hover {
   background-color: rgb(212, 228, 243);
   color: var(--allports-2);
 } 
+/*end of section 2-feature products*/
 
 
+
+
+
+
+
+/*section 3 news section format*/
 .third-section{
     width: 100%;
-    height: 800px;
     background-color: #1C2427;
+    padding-bottom: 2%;
 }
 
+/*news text background*/
 .news-section{
-  margin: 5% 10%;
-  margin-top: 10%;
+  margin: 0% 10%;
+  margin-top: 7%;
   font-size: 18.72px;
   color: aliceblue;
 }
 
+/*layout for all pieces of news*/
 .news1{
   display: flex;
   background-color:#A2BCCC;
   margin-top: 5%;
-}
-
-.news-image{
-  width: 50%;
-  height: 40%;
 }
 
 .two-news{
@@ -264,11 +298,19 @@ margin-top: 20%;
   margin-right: 10%;
 }
 
+/*news image format*/
+.news-image{
+  width: 50%;
+  height: 40%;
+}
+
+/*typography*/
 .news-title{
   padding-bottom: 2%;
   text-transform: uppercase;
 }
 
+/*news text background*/
 .news-article{
   padding: 1% 5%;
   width: 50%;
@@ -276,12 +318,7 @@ margin-top: 20%;
   background-color: transparent;
 }
 
-.news-content{
-  size: 1.2rem;
-}
-
-
-/* Limit element shown in small screen*/
+/* Limit news text shown in small screens*/
 
 @media (max-width: 1330px) {
   .news-content:last-child {
@@ -295,23 +332,71 @@ margin-top: 20%;
   }
 }
 
-
-.news1overlap{
-  position: relative;
-  z-index: 1;
-}
-.newsbuttonoverlap{
-  position: absolute;
-  z-index: 2;
-  top: 44px;
-  display: none;
-  left: 59px;	
-}
-
+/*Read more news button hover effect*/
 .news1:hover .newsbuttonoverlap{ 
 display:block;
 }
 
 #newsBtn{
   padding: 3%;
+}
+/*end of section 3-news section*/
+
+
+
+
+
+
+
+/*section 4-vr shop tour*/
+
+.forth-section{
+  width: 100%;
+  background-color: #A2BCCC;
+  margin-top: 10%;
+  padding-bottom: 0%;
+}
+
+.vr-section{
+  margin-left: 10%;
+  padding-top: 7% ;
+  font-size: 18.72px;
+  color:var(--black);
+}
+
+.vr-image{
+  align-items: center;
+  margin-top: 2%;
+  position: relative;
+  left: 10%;
+  z-index: 1;
+  width: 80%;
+}
+
+.play-icon{
+  width: 3%;
+  align-self: center;
+  position:absolute;
+  right: 47%;
+  z-index: 2;
+  margin-top: 14%;
+}
+
+
+/*return to page top*/
+#myBtn {
+    font-family:var(--font-family-maven_pro);
+    color: aliceblue;
+    border: none;
+    background-color: #757777ec; 
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding:  3% 50%; 
+    font-size: 13px; 
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 10%;
+}
+
+#myBtn:hover {
+  background-color: #7577777c; /* Add a dark-grey background on hover */
 }

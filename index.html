@@ -18,19 +18,39 @@
       }
     </script>
 
+    <script type="text/javascript">
+      function cartFunction(){
+      document.getElementsByClassName('cart').onclick=location.href ="cart.html"
+      }
+    </script>
+
     <!--scroll to vr -->
     <script>
       function vrFunction() {
-      document.getElementById('vr').scrollIntoView({ behavior: 'smooth', block: 'center' })
+      document.getElementsByClassName('forth-section').scrollIntoView({ behavior: 'smooth', block: 'center' })
       };
     </script>
+    
+    <script>
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
 
 </head>
 
 
 <body>
   <header>
+
   <!--place search and chart icon-->
+    <div class="header-icon">
+      <img src="icon/search-icon.png" class="search">
+      <img src="icon/cart-icon.png" class="cart">
+    </div>
+
   </header>
   
 
@@ -86,113 +106,122 @@
       });
     </script>-->
 
-  <!--second section-->
-  <section class="second-section">
+    <!--second section-->
+    <section class="second-section">
 
-    <!--div holding all element-->
-    <div class="feature_product">
+      <!--div holding all element-->
+      <div class="feature_product">
       
-      <!--section heading-->
-      <h3>Featured Product</h3>
+        <!--section heading-->
+        <h3>Featured Product</h3>
       
-      <!--grid container of 3 column of feature prodct-->
-      <div class="grid-container">
+        <!--grid container of 3 column of feature prodct-->
+        <div class="grid-container">
         
-        <!--product 1-->
-        <div class="grid-item" #="item1">
-          <article class="grid-product">
-            <img src="image/acoustic guitar.png" class="product-image">
-            <p>Product Name</p>
-            <p>$3,499</p>
-            <button onclick="viewFunction()" id="viewBtn" class="view">Learn More</button>
-          </article>
-        </div>
+          <!--product 1-->
+          <div class="grid-item" #="item1">
+            <article class="grid-product">
+              <img src="image/acoustic guitar.png" class="product-image">
+              <p>Product Name</p>
+              <p>$3,499</p>
+              <button onclick="viewFunction()" id="viewBtn" class="view">Learn More</button>
+            </article>
+          </div>
 
-        <!--product 2-->
-        <div class="grid-item" #="item2">
-          <article>
-            <img src="image/acoustic guitar.png" class="product-image">
-            <p>Product Name</p>
-            <p>$3,499</p>
-            <button onclick="viewFunction()" id="viewBtn" class="view">Learn More</button>
-          </article>
-        </div>
+          <!--product 2-->
+          <div class="grid-item" #="item2">
+            <article>
+              <img src="image/acoustic guitar.png" class="product-image">
+              <p>Product Name</p>
+              <p>$3,499</p>
+              <button onclick="viewFunction()" id="viewBtn" class="view">Learn More</button>
+            </article>
+          </div>
 
-        <!--product 3-->
-        <div class="grid-item" #="item3">
-          <article>
-            <img src="image/acoustic guitar.png" class="product-image">
-            <p>Product Name</p>
-            <p>$3,499</p>
-            <button onclick="viewFunction()" id="viewBtn" class="view">Learn More</button>
-          </article>
-        </div>
+          <!--product 3-->
+          <div class="grid-item" #="item3">
+            <article>
+              <img src="image/acoustic guitar.png" class="product-image">
+              <p>Product Name</p>
+              <p>$3,499</p>
+              <button onclick="viewFunction()" id="viewBtn" class="view">Learn More</button>
+            </article>
+          </div>
 
-      </div><!--container closing-->
+        </div><!--container closing-->
 
-    </div><!--feature product closing-->
+      </div><!--feature product closing-->
 
-  </section>
+    </section>
 
-  <!--second section-->
-  <section class="third-section">
+    <!--third section-->
+    <section class="third-section">
 
-    <h3 class="news-section">News</h3>
-    <div class="two-news">
+    <!--section heading-->
+      <h3 class="news-section">News</h3>
+      <div class="two-news">
     
-      <div class="news1">
+        <div class="news1">
 
-        <img src="image/news1.png" class="news-image">
-        <article class="news-article">
-          <h4 class="news-title">Lorem ipsum dolor sit</h4>
-          <p class="news-content">
-            Lorem ipsum dusoal neusi acui lotumsn duell krnum
-            syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
-            acui lotumsn  ipsum dusoal neusi acui lotumsn.
+          <img src="image/news1.png" class="news-image">
+          <article class="news-article">
+            <h4 class="news-title">Lorem ipsum dolor sit</h4>
+            <p class="news-content">
+              Lorem ipsum dusoal neusi acui lotumsn duell krnum
+              syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
+              acui lotumsn  ipsum dusoal neusi acui lotumsn.
+            </p>
+            <p class="news-content" #="content2">
+              Lorem ipsum dusoal neusi acui lotumsn duell krnum
+              syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
+              acui lotumsn  ipsum dusoal neusi acui lotumsn.  dusoal
+              neusi acui lotumsn duell krnum syulo oldmy ajy ipsum
+              dolor lorem ipsum dusoal neusi acui lotumsn  ipsum
+              dusoal neusi acui lotumsn.
+            </p>
+          </article>
+          <button onclick="viewFunction()" id="newsBtn" class="view">Read More</button>
+
+        </div>
+        <div class="news1">
+
+          <img src="image/news2.png" class="news-image">
+          <article class="news-article">
+            <h4 class="news-title">Lorem ipsum dolor sit</h4>
+            <p class="news-content">
+              Lorem ipsum dusoal neusi acui lotumsn duell krnum
+              syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
+              acui lotumsn  ipsum dusoal neusi acui lotumsn.
+            </p>
+            <p class="news-content" #="content2">
+              Lorem ipsum dusoal neusi acui lotumsn duell krnum
+              syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
+              acui lotumsn  ipsum dusoal neusi acui lotumsn.  dusoal
+              neusi acui lotumsn duell krnum syulo oldmy ajy ipsum
+              dolor lorem ipsum dusoal neusi acui lotumsn  ipsum
+              dusoal neusi acui lotumsn.
           </p>
-          <p class="news-content" #="content2">
-            Lorem ipsum dusoal neusi acui lotumsn duell krnum
-            syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
-            acui lotumsn  ipsum dusoal neusi acui lotumsn.  dusoal
-            neusi acui lotumsn duell krnum syulo oldmy ajy ipsum
-            dolor lorem ipsum dusoal neusi acui lotumsn  ipsum
-            dusoal neusi acui lotumsn.
-          </p>
-        </article>
-        <button onclick="viewFunction()" id="newsBtn" class="view">Read More</button>
+          </article>
+          <button onclick="viewFunction()" id="newsBtn" class="view">Read More</button>
+
+        </div>
 
       </div>
-      <div class="news1">
 
-        <img src="image/news2.png" class="news-image">
-        <article class="news-article">
-          <h4 class="news-title">Lorem ipsum dolor sit</h4>
-          <p class="news-content">
-            Lorem ipsum dusoal neusi acui lotumsn duell krnum
-            syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
-            acui lotumsn  ipsum dusoal neusi acui lotumsn.
-          </p>
-          <p class="news-content" #="content2">
-            Lorem ipsum dusoal neusi acui lotumsn duell krnum
-            syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
-            acui lotumsn  ipsum dusoal neusi acui lotumsn.  dusoal
-            neusi acui lotumsn duell krnum syulo oldmy ajy ipsum
-            dolor lorem ipsum dusoal neusi acui lotumsn  ipsum
-            dusoal neusi acui lotumsn.
-          </p>
-        </article>
-        <button onclick="viewFunction()" id="newsBtn" class="view">Read More</button>
+    </section>
 
+    <!--forth section-->
+    <section class="forth-section">
+      <h3 class="vr-section">Vr Shop Tour</h3>
+      <div #="vr">
+        <img src="image/VRtour.png" class="vr-image">
+        <img src="icon/play.png" class="play-icon">
       </div>
 
-    </div>
+      <!--Return to page top-->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-  </section>
-
-  <section class="forth-section">
-    <div #="vr">
-    </div>
-  </section>
+    </section>
 
 </main>
 
