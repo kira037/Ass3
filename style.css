@@ -1,6 +1,6 @@
 body{
     /* Gradient background, combination of colour and image*/
-    background-image: linear-gradient(to right, #1c242700,rgba(28, 36, 39, 0.941),#000000),url('home_guitar.png');
+    background-image: linear-gradient(to right, #1c242700,rgba(28, 36, 39, 0.941),#000000),url('image/home_guitar.png');
     background-repeat: no-repeat;
     background-size:contain;
     width: 100%;
@@ -139,6 +139,12 @@ body{
     font-weight: bolder;
   }
 
+
+  h3{
+    font-weight: 1600;
+    font-size: larger;
+  }
+
 .intro{
      font-family:var(--font-family-inkfree);
      color: aliceblue;
@@ -173,9 +179,10 @@ body{
  /* second section */
 .second-section{
     width: 100%;
-    height: 120%;
+    height: 10%;
     background-color: #A2BCCC;
     margin-top: 10%;
+    padding-bottom: 12%;
 }
 
 .feature_product{
@@ -201,8 +208,8 @@ body{
 
 article{
     background-color: #ADC1CD;
-    width: 100%;
-    height: 120%;
+    width: 110%;
+    height: 110%;
 }
 
 article>img{
@@ -210,7 +217,7 @@ width: 80%;
 margin-top: 20%;
 }
 
-#viewBtn {
+.view {
     font-family:var(--font-family-maven_pro);
     color: aliceblue;
     border: none;
@@ -219,10 +226,92 @@ margin-top: 20%;
     padding:  3% 6%; 
     font-size: 13px; 
     text-decoration: none;
+    text-transform: capitalize;
   }
+
+.view:hover {
+  background-color: rgb(212, 228, 243);
+  color: var(--allports-2);
+} 
+
 
 .third-section{
     width: 100%;
     height: 800px;
     background-color: #1C2427;
+}
+
+.news-section{
+  margin: 5% 10%;
+  margin-top: 10%;
+  font-size: 18.72px;
+  color: aliceblue;
+}
+
+.news1{
+  display: flex;
+  background-color:#A2BCCC;
+  margin-top: 5%;
+}
+
+.news-image{
+  width: 50%;
+  height: 40%;
+}
+
+.two-news{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.news-title{
+  padding-bottom: 2%;
+  text-transform: uppercase;
+}
+
+.news-article{
+  padding: 1% 5%;
+  width: 50%;
+  height: 35%;
+  background-color: transparent;
+}
+
+.news-content{
+  size: 1.2rem;
+}
+
+
+/* Limit element shown in small screen*/
+
+@media (max-width: 1330px) {
+  .news-content:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 910px) {
+  .news-content {
+    display: none;
+  }
+}
+
+
+.news1overlap{
+  position: relative;
+  z-index: 1;
+}
+.newsbuttonoverlap{
+  position: absolute;
+  z-index: 2;
+  top: 44px;
+  display: none;
+  left: 59px;	
+}
+
+.news1:hover .newsbuttonoverlap{ 
+display:block;
+}
+
+#newsBtn{
+  padding: 3%;
 }

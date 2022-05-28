@@ -10,6 +10,21 @@
     
     <!--nav bar responsive js-->
     <script src="navbar.js"></script> 
+
+    <!--learn more button js-->
+    <script type="text/javascript">
+      function viewFunction(){
+      document.getElementsByClassName('view').onclick=location.href ="product list.html"
+      }
+    </script>
+
+    <!--scroll to vr -->
+    <script>
+      function vrFunction() {
+      document.getElementById('vr').scrollIntoView({ behavior: 'smooth', block: 'center' })
+      };
+    </script>
+
 </head>
 
 
@@ -20,13 +35,14 @@
   
 
   <main>
+
     <!--first section-->
     <section class="first-section">
 
       <!--nav bar-->
       <nav class="topnav" id="myTopnav">
 
-        <div class="logo"> <a #="doglogo" href="index.html"><img src=doglogo.png class="doglogo_img"></a>
+        <div class="logo"> <a #="doglogo" href="index.html"><img src=icon/doglogo.png class="doglogo_img"></a>
        </div>
         <a href="product list.html" class="active">Acoustic</a>
         <a href="product list.html">Electric</a>
@@ -35,7 +51,7 @@
        <a href="#support">Support</a>
        <a href="#contact">Contact</a>
        <a href="#about">About</a>
-       <a href="javascript:void(0);" class="icon" onclick="responsiveNav()"><img src="icon_menu white.png">
+       <a href="javascript:void(0);" class="icon" onclick="responsiveNav()"><img src="icon/icon_menu white.png">
        <i class="fa fa-bars"></i>
        </a>
 
@@ -54,18 +70,21 @@
         <!-- quick link -->
         <table class="quick link">
         <td href="product list.html"><p class="link_to_shop">Visit Our Collection</p></td>
-        <td><button onclick="vrFunction()" id="vrBtn" title="vr" class="link_to_vr">See Our Shop</button></td>
-        <script>
-        function vrFunction() {
-      document.getElementById('vr').scrollIntoView({ behavior: 'smooth', block: 'center' })
-      };
-        </script>
+        <td><button onclick="vrFunction()" id="vrBtn" class="link_to_vr">See Our Shop</button></td>
         </table>
 
        </div>
 
-  </section>
+    </section>
 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+         
+         $('#content').load("html/no-poverty.html");
+      
+      });
+    </script>-->
 
   <!--second section-->
   <section class="second-section">
@@ -110,18 +129,70 @@
         </div>
 
       </div><!--container closing-->
+
     </div><!--feature product closing-->
 
-</section>
+  </section>
 
-<section class="thirs-section">
-  <h3>News</h3>
-</section>
+  <!--second section-->
+  <section class="third-section">
 
-<section class="forth-section">
-<div #="vr">
-</div>
-</section>
+    <h3 class="news-section">News</h3>
+    <div class="two-news">
+    
+      <div class="news1">
+
+        <img src="image/news1.png" class="news-image">
+        <article class="news-article">
+          <h4 class="news-title">Lorem ipsum dolor sit</h4>
+          <p class="news-content">
+            Lorem ipsum dusoal neusi acui lotumsn duell krnum
+            syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
+            acui lotumsn  ipsum dusoal neusi acui lotumsn.
+          </p>
+          <p class="news-content" #="content2">
+            Lorem ipsum dusoal neusi acui lotumsn duell krnum
+            syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
+            acui lotumsn  ipsum dusoal neusi acui lotumsn.  dusoal
+            neusi acui lotumsn duell krnum syulo oldmy ajy ipsum
+            dolor lorem ipsum dusoal neusi acui lotumsn  ipsum
+            dusoal neusi acui lotumsn.
+          </p>
+        </article>
+        <button onclick="viewFunction()" id="newsBtn" class="view">Read More</button>
+
+      </div>
+      <div class="news1">
+
+        <img src="image/news2.png" class="news-image">
+        <article class="news-article">
+          <h4 class="news-title">Lorem ipsum dolor sit</h4>
+          <p class="news-content">
+            Lorem ipsum dusoal neusi acui lotumsn duell krnum
+            syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
+            acui lotumsn  ipsum dusoal neusi acui lotumsn.
+          </p>
+          <p class="news-content" #="content2">
+            Lorem ipsum dusoal neusi acui lotumsn duell krnum
+            syulo oldmy ajy ipsum dolor lorem ipsum dusoal neusi
+            acui lotumsn  ipsum dusoal neusi acui lotumsn.  dusoal
+            neusi acui lotumsn duell krnum syulo oldmy ajy ipsum
+            dolor lorem ipsum dusoal neusi acui lotumsn  ipsum
+            dusoal neusi acui lotumsn.
+          </p>
+        </article>
+        <button onclick="viewFunction()" id="newsBtn" class="view">Read More</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="forth-section">
+    <div #="vr">
+    </div>
+  </section>
 
 </main>
 
