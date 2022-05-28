@@ -405,7 +405,7 @@ display:block;
     border: none;
     background-color: #757777ec; 
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding:  2% 50%; 
+    padding:  2% 49.35%; 
     font-size: 13px; 
     text-decoration: none;
     text-transform: capitalize;
@@ -434,9 +434,6 @@ table{
   margin-top: 3%;
 }
 
-tr{
-  padding-left: 5%;
-}
 
 footer td, th{
   padding-top: 1%;
@@ -460,12 +457,34 @@ th {
 @media (max-width: 1100px) {
   footer td, th{
     padding-top: 1%;
-    padding-bottom: 1%;
+    padding-bottom: 0%;
     padding-left: 30px;
     padding-right: 40px;
   }
   th {
     padding-bottom: 3%;
   }
+}
 
+footer .footer-dog{
+  width: 30%;
+  min-width: 300px;
+  mix-blend-mode: multiply ; 
+  margin-top: 0%;
+}
+
+.shop-info{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+hr{
+  border: 1px solid rgba(255, 255, 255, 0.144);
+}
+
+footer p{
+  padding-bottom: 1%;
+  margin-bottom: 1%;
 }
