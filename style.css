@@ -488,3 +488,7 @@ footer p{
   padding-bottom: 1%;
   margin-bottom: 1%;
 }
+
+td[onclick],footer h1{
+  cursor: pointer;
+}
