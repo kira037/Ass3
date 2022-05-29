@@ -185,6 +185,7 @@ body{
      font-family:var(--font-family-inkfree);
      color: aliceblue;
      margin-left: 60%;
+     margin-right: 5%;
      margin-top: 15%;
      position: relative;
 }
@@ -406,7 +407,7 @@ display:block;
     border: none;
     background-color: #757777ec; 
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding:  2% 47.9%; 
+    padding:  2% 47.8%; 
     font-size: 13px; 
     text-decoration: none;
     text-transform: capitalize;

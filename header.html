@@ -26,7 +26,8 @@
   .topnav {
     overflow:hidden;
     background-color: var(--light_blue);
-    position: relative;
+    z-index: 9;
+    margin: 0px;
   }
   
 
@@ -94,7 +95,7 @@
   
 /* Nav icon appears */
   @media screen and (max-width: 980px) {
-    .topnav.responsive {position:relative;}
+    .topnav.responsive { z-index: 9;margin: 0px;}
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
@@ -111,7 +112,7 @@
 
 
 <script>
-/* responsive" topnav when the user clicks on the icon */
+/* responsive topnav when the user clicks on the icon */
 function responsiveNav() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -149,7 +150,7 @@ function responsiveNav() {
     <i class="fa fa-bars"></i>
     </a>
   
-   </nav>
+        </nav>
 
 </header>
 

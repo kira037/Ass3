@@ -1,0 +1,67 @@
+/* General reference of style*/
+:root {
+    --black: 
+  rgba(0, 0, 0, 1);
+      --background-blue: 
+  rgba(0, 73, 112, 1);
+    --allports-2: 
+  rgba(0, 111, 173, 1);
+  --light_blue:
+  #A2BCCC;    
+    --woodsmoke: 
+  rgba(16, 16, 16, 1);
+    --highlight-blue: 
+  rgba(49, 60, 202, 1);
+    --picton-blue: 
+  rgba(49, 181, 255, 1);
+  --bright-blue:
+  #6BCCF2;
+    --screamin-green: 
+  rgba(62, 232, 102, 1);
+    --sinbad: 
+  rgba(158, 195, 212, 1);
+    --dove-gray: 
+  rgba(112, 112, 112, 1);
+  
+    --font-size-xs: 13px;
+    --font-size-s: 16px;
+    --font-size-m: 20px;
+    --font-size-l: 32px;
+    --font-size-h: 55px;
+  
+    --font-family-cardo: "Cardo";
+    --font-family-inkfree: "InkFree-Regular";
+    --font-family-maven_pro: "Maven Pro";
+  }
+  /* end of general reference of style*/
+
+
+  /*transparency and blend of background image and colour*/
+  body{
+    background-image: url('image/home_guitar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 483px;   
+    background-blend-mode:multiply;
+    background-position-y: 110px;
+    margin:0px;
+    margin-top:0px;
+    padding: 0px;
+    background-color: #1C2427;
+  }
+
+  main.h3{
+      width: 10%;
+      color: #6BCCF2;
+  }
+
+  main p,a{
+      color: #6BCCF2;
+      padding: 1%;
+      text-align: center;
+  }
+
+  main .nav{
+      text-decoration: underline;
+  }
