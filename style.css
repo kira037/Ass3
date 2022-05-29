@@ -193,9 +193,10 @@ body{
     font-weight: 100;
 }
 
-.link_to_shop{
+table .link_to_shop{
     padding-right: 2%;
     cursor: pointer;
+    color: aliceblue;
     text-decoration: underline;
 }
 
@@ -405,7 +406,7 @@ display:block;
     border: none;
     background-color: #757777ec; 
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding:  2% 49.35%; 
+    padding:  2% 47.9%; 
     font-size: 13px; 
     text-decoration: none;
     text-transform: capitalize;

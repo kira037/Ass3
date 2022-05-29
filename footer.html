@@ -1,0 +1,143 @@
+
+<style>
+
+/*footer*/
+footer{
+  margin-top: 5%;
+  text-align: center;
+  color: aliceblue;
+}
+
+table{
+  text-align: left;
+  margin-top: 3%;
+}
+
+footer td{
+  color: rgba(255, 255, 255, 0.845);
+  font-weight: 10;
+}
+
+footer td, th{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 130px;
+  padding-right: 140px;
+}
+
+th {
+  text-transform: uppercase;
+  border-bottom: 100px ;
+  border-color: white;
+  padding-bottom: 3%;
+}
+
+.social-media-icon{
+  width: 30%;
+  max-width: 200px;
+}
+
+@media (max-width: 1100px) {
+  footer td, th{
+    padding-top: 1%;
+    padding-bottom: 0%;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  th {
+    padding-bottom: 3%;
+  }
+}
+
+footer .footer-dog{
+  width: 30%;
+  min-width: 300px;
+  mix-blend-mode: multiply ; 
+  margin-top: 0%;
+}
+
+.shop-info{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+hr{
+  border: 1px solid rgba(255, 255, 255, 0.144);
+}
+
+footer p{
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+}
+
+td[onclick],footer h1{
+  cursor: pointer;
+}
+
+</style>
+
+
+<footer>
+
+  <h1 href="index.html">Bluedog Guitars</h1>
+  <img src="icon/social media.png" class="social-media-icon">
+  <div class="footer-div">
+    <table class="center" align="center">
+
+      <tr class="head-row">
+          
+        <th><div style=
+            "border: solid 0 rgba(0, 111, 173, 1); border-left-width:3px; padding-left:0.5ex">
+             SHOP</div></th>
+        <th><div style=
+            "border: solid 0 rgba(0, 111, 173, 1); border-left-width:3px; padding-left:0.5ex">
+             SUPPORT</div></th>
+        <th><div style=
+            "border: solid 0 rgba(0, 111, 173, 1); border-left-width:3px; padding-left:0.5ex">
+             about</div></th>
+      </tr>
+      
+      <tr>
+        <td onclick="viewFunction()">Acoustic</td>
+        <td>Contact Us</td>
+        <td>Story</td>
+      </tr>
+      
+      <tr>
+        <td onclick="viewFunction()">Electric</td>
+        <td>Return Terms</td>
+        <td>Team</td>
+      </tr>
+
+      <tr>
+        <td onclick="viewFunction()">Accessory</td>
+        <td>Gift Cards</td>
+        <td>Photo</td>
+      </tr>
+
+      <tr>
+        <td onclick="viewFunction()">Pro Audio</td>
+        <td></td>
+        <td>Review</td>
+      </tr>
+      
+    </table>
+  
+  </div>
+  
+  <img src="icon/bluedog_dog.png" class="footer-dog">
+
+  <div class="shop-info">
+
+    <P>Shop Location</P>
+    <p>123-456789</p>
+    
+  </div>
+  
+  <hr>
+    
+  <p>@2022 Blue Dog - All right Reserved</p>
+
+</footer>

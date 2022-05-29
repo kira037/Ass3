@@ -1,42 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluedog Guitar</title>
     
     <!-- general css for whole page-->
     <link rel="stylesheet" href="style.css">
     
-    <!--nav bar responsive js-->
-    <script src="navbar.js"></script> 
+    <!--general js for whole page-->
+    <script src="homepage.js"></script>
 
-    <!--learn more button js-->
-    <script type="text/javascript">
-      function viewFunction(){
-      document.getElementsByClassName('view').onclick=location.href ="product list.html"
-      }
-    </script>
-
-    <script type="text/javascript">
-      function cartFunction(){
-      document.getElementsByClassName('cart').onclick=location.href ="cart.html"
-      }
-    </script>
-
-    <!--scroll to vr -->
-    <script>
-      function vrFunction() {
-      document.getElementsByClassName('forth-section').scrollIntoView({ behavior: 'smooth', block: 'center' })
-      };
-    </script>
-    
-    <script>
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
+    <!--reusable footer and header-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 
 </head>
@@ -45,66 +23,35 @@
 <body>
   <header>
 
-  <!--search and chart icon-->
-    <div class="header-icon">
-      <img src="icon/search-icon.png" class="search" >
-      <img src="icon/cart-icon.png" class="cart" onclick="cartFunction()">
+    <div id="header-placeholder">
     </div>
+    <script>
+      $(function(){
+        $("#header-placeholder").load("header.html");
+      });
+    </script>
 
   </header>
-  
 
   <main>
-
-    <!--first section-->
-    <section class="first-section">
-
-      <!--nav bar-->
-      <nav class="topnav" id="myTopnav">
-
-        <div class="logo"> <a #="doglogo" href="index.html"><img src=icon/doglogo.png class="doglogo_img"></a>
-       </div>
-        <a href="product list.html" class="active">Acoustic</a>
-        <a href="product list.html">Electric</a>
-        <a href="product list.html">Pro Audio</a>
-        <a href="product list.html">Accessory</a>
-        <a href="#support">Support</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()"><img src="icon/icon_menu white.png">
-       <i class="fa fa-bars"></i>
-        </a>
-
-       </nav>
-
-
-
       <!--intro to the website-->
       <div class="intro">
 
         <div class="page_name">
-        <h1 #="title">Bluedog Guitars</h1>
-        <h2>A Candy Shop for Guitar Lovers</h2>
+          <h1 #="title">Bluedog Guitars</h1>
+          <h2>A Candy Shop for Guitar Lovers</h2>
         </div>
 
         <!-- quick link -->
         <table class="quick link">
-        <td href="product list.html" #="first"><p class="link_to_shop">Visit Our Collection</p></td>
-        <td #="first"><button onclick="vrFunction()" id="vrBtn" class="link_to_vr">See Our Shop</button></td>
+          <td><a href="product list.html" #="first" class="link_to_shop" vlink="white">Visit Our Collection</a></td>
+          <td #="first"><button onclick="vrFunction()" id="vrBtn" class="link_to_vr">See Our Shop</button></td>
         </table>
 
        </div>
 
     </section>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-         
-         $('#content').load("html/no-poverty.html");
-      
-      });
-    </script>-->
 
     <!--second section-->
     <section class="second-section">
@@ -226,57 +173,14 @@
   </main>
 
   <footer>
-    <h1 href="index.html">Bluedog Guitars</h1>
-    <img src="icon/social media.png" class="social-media-icon">
-    <div class="footer-div">
-      <table class="center" align="center">
 
-        <tr class="head-row">
-          
-          <th><div style=
-            "border: solid 0 rgba(0, 111, 173, 1); border-left-width:3px; padding-left:0.5ex">
-             SHOP</div></th>
-          <th><div style=
-            "border: solid 0 rgba(0, 111, 173, 1); border-left-width:3px; padding-left:0.5ex">
-             SUPPORT</div></th>
-          <th><div style=
-            "border: solid 0 rgba(0, 111, 173, 1); border-left-width:3px; padding-left:0.5ex">
-             about</div></th>
-        </tr>
-      
-        <tr>
-          <td onclick="viewFunction()">Acoustic</td>
-          <td>Contact Us</td>
-          <td>Story</td>
-        </tr>
-      
-       <tr>
-          <td onclick="viewFunction()">Electric</td>
-          <td>Return Terms</td>
-          <td>Team</td>
-        </tr>
-
-        <tr>
-          <td onclick="viewFunction()">Accessory</td>
-          <td>Gift Cards</td>
-          <td>Photo</td>
-        </tr>
-
-        <tr>
-          <td onclick="viewFunction()">Pro Audio</td>
-          <td></td>
-           <td>Review</td>
-        </tr>
-      </table>
+    <div id="footer-placeholder">
     </div>
-    <img src="icon/bluedog_dog.png" class="footer-dog">
-
-    <div class="shop-info">
-      <P>Shop Location</P>
-      <p>123-456789</p>
-    </div>
-    <hr>
-    <p>@2022 Blue Dog - All right Reserved</p>
+    <script>
+      $(function(){
+        $("#footer-placeholder").load("footer.html");
+      });
+      </script>
 
   </footer>
 
