@@ -22,12 +22,16 @@
 
 
 
+
+
+
+
+/*section 1 nav bar general intro*/
 /* Navigation background*/
   .topnav {
     overflow:hidden;
     background-color: var(--light_blue);
-    z-index: 9;
-    margin: 0px;
+    position: relative;
   }
   
 
@@ -95,7 +99,7 @@
   
 /* Nav icon appears */
   @media screen and (max-width: 980px) {
-    .topnav.responsive { z-index: 9;margin: 0px;}
+    .topnav.responsive {position:relative;}
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
