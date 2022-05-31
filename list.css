@@ -4,22 +4,20 @@
   rgba(0, 0, 0, 1);
       --background-blue: 
   rgba(0, 73, 112, 1);
+  --highlight:
+  #31B5FF;
     --allports-2: 
   rgba(0, 111, 173, 1);
   --light_blue:
   #A2BCCC;    
     --woodsmoke: 
   rgba(16, 16, 16, 1);
-    --highlight-blue: 
+    --highsaturated-blue: 
   rgba(49, 60, 202, 1);
-    --picton-blue: 
-  rgba(49, 181, 255, 1);
   --bright-blue:
   #6BCCF2;
-    --screamin-green: 
-  rgba(62, 232, 102, 1);
-    --sinbad: 
-  rgba(158, 195, 212, 1);
+  --white:
+  #F2F2F2;
     --dove-gray: 
   rgba(112, 112, 112, 1);
   
@@ -40,51 +38,202 @@
 
 body{
   background-color: #1C2427;
- 
   background-size:contain;
   width: 100%;
-  height: 483px;
-
+  height: 3000px;
   background-position-y: 110px;
-
 }
 
 
+/*first section link and current page*/
+main .first section link ,a{
+  color: #6BCCF2;
+  padding: 5%;
+  text-align: center;
+}
 
-
-
-  main p,a{
-      color: #6BCCF2;
-      padding: 5%;
-      text-align: center;
-  }
-
-  main .nav{
-      text-decoration: underline;
-  }
-
-
+main .nav{
+  text-decoration: underline;
+}
 
 .background-image{
   opacity: 50%;
+  margin-top: -25%;
 }
 
 .background {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    height: 200px;  
-    overflow: hidden;
-
-
-
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  margin: 0%;
 }
-  
   
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #6BCCF2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #6BCCF2;
 }
+/*end of first section*/
+
+
+
+
+
+/* second section format and background*/
+.second-section{
+  margin: 0%;
+  background-color: #323B41;
+  position: relative;
+  top: 0px;
+  display: flex;
+}
+
+.filter-placeholder{
+  width: 100%;
+  height: 1000px;
+  background-color: #757777;
+}
+
+
+label, #sort, .sort-by{
+  color: #f2f2f2c6;
+  background-color: #323B41;
+}
+
+.sort-by{
+  position: relative;
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 15%;
+}
+
+/*layout of whole product list grid*/
+.grid-container {
+  width: 92%;
+  margin-left: 3.1%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3,3fr);
+  column-gap: 4.5%;
+  row-gap: 4%;
+}
+
+.grid-item{
+  text-align: center;
+}
+
+/*altering grid column when displayed on smaller screen*/
+@media (max-width: 1100px) {
+  .grid-item {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .grid-container {
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 5%;
+    row-gap: 3%;
+  }
+
+  .grid-container :nth-child(n+4){
+    display: none;
+  }
+
+  .second-section{
+    margin: 0%;
+    background-color: #323B41;
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .filter-placeholder{
+    width: 100%;
+    height: 100px;
+    background-color: #757777;
+  }
+  .sort-by{
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+}
+
+
+/*resizing and radius border of guitar image*/
+.product-image{
+  width: 100%;
+  padding: 5% 2% 5% 2%;
+  background-color: #757777;
+  border-radius: 10px;
+  margin: 0%;
+  cursor: pointer;
+}
+
+.product-image:hover{
+  opacity: 50%;
+  box-shadow: #121718ec;
+}
+
+#product-name, #product-price{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#product-name:hover{
+  cursor: pointer;
+  color: #f2f2f276;
+  text-shadow: #000000;
+}
+
+.price-and-name{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+  color: #f2f2f2de;
+}
+
+.product-info .product-description{
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  color: #f2f2f2c0;
+  font-weight: 200;
+  position: relative;
+  top: -25px;
+}
+
+/*format of learn more button and read more button in section 3*/
+.add {
+  font-family:var(--font-family-maven_pro);
+  color: #F2F2F2;
+  border: none;
+  border-radius: 25px;
+  background-image: linear-gradient(#6D8A9A,#0A6497); 
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding:  40% 120%; 
+  font-size: 13px; 
+  text-decoration: none;
+  position: relative;
+  right: 38px;
+  top: 30%;
+}
+
+.add-placeholder{
+  padding-left: 10%;
+  width: 5%;
+}
+
+/* when hover over learn more button, it changes color*/
+.add:hover {
+  opacity: 50%;
+  box-shadow: 50px #000000;
+} 
+/*end of section 2-feature products*/
