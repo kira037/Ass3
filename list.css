@@ -52,7 +52,7 @@ main .first section link ,a{
 }
 
 /*first section link style*/
-main .nav{
+.centered a{
   text-decoration: underline;
 }
 
@@ -193,10 +193,59 @@ label, #sort, .sort-by{
   cursor: pointer;
 }
 
-/*hover over effect of product image*/
-.product-image:hover{
-  opacity: 50%;
-  box-shadow: #121718ec;
+
+/*hover over effect of item*/
+.container {
+  position: relative;
+}
+
+/*darker when hover over*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 104%;
+  height: 97.6%;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.459);
+}
+
+/*layer image backward*/
+.forth-section img {
+  position: absolute;
+  width: 30%;
+  left: 0;
+}
+
+/*format of view btn, not displaying first*/
+.button {
+  position: absolute;
+  width: 300px;
+  left:40px;
+  top: 72px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+/*display when hover*/
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.container:hover .button {
+  opacity: 1;
 }
 
 /*making product name easier to click*/
@@ -410,38 +459,51 @@ opacity: 50%;
 
 
 
-
+/*
 .container {
   position: relative;
+  margin-top: 50px;
+  width: 500px;
+  height: 300px;
 }
 
 
-
-.container:hover .overlay {
-  display: block;
-  background: rgba(0, 0, 0, .3);
-}
 
 .forth-section img {
   position: absolute;
-  width: 30%;
+  width: 50%;
   left: 0;
 }
 
-
-.button {
+.title {
   position: absolute;
-  width: 300px;
-  left:0;
-  top: 180px;
+  left: 13%;
+  top: 45px;
+  font-weight: 200;
+  font-size: 20px;
   text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.container:hover .title {
+  top: 30px;
+}
+
+.forth-section .button {
+  position: absolute;
+  top: 90px;
+
+
   opacity: 0;
   transition: opacity .35s ease;
 }
 
 .button a {
   width: 200px;
-  padding: 12px 48px;
+  padding: 8px 18px;
   text-align: center;
   color: white;
   border: solid 2px white;
@@ -450,4 +512,108 @@ opacity: 50%;
 
 .container:hover .button {
   opacity: 1;
+}
+*/
+
+
+
+
+.forth-container {
+  position: relative;
+  margin-top: 50px;
+  width: 500px;
+  height: 300px;
+}
+
+.forth-img {
+  position: absolute;
+  width: 70%;
+  left: 0;
+}
+
+.title {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.forth-container:hover .title {
+  top: 90px;
+}
+
+.forth-button {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.forth-button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.forth-container:hover .forth-button {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 10%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

@@ -11,6 +11,7 @@
     
   <!--general js for whole page-->
   <script src="homepage.js"></script>
+  <script src=".js"></script>
   
   <!--Reusable header and footer-->
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -84,7 +85,8 @@
 
               <img src="image/acoustic2 - copy.png" class="product-image">
               <div class="overlay"></div>
-              <div class="button"><a href="#"> BUTTON </a></div>
+              <div class="button"><a href="product-page.html"> VIEW </a></div>
+
             </div>
 
             <div class="product-info">
@@ -98,16 +100,22 @@
                 <p>Lorem  dolor sit amet, consetetur sadipscing elitr.Lorem  dolor amet.</p>
                 <div class="add-placeholder"><button onclick="addFunction()" id="addBtn" class="add">Add</button>
                 </div>
-                </div>
+              </div>
+
             </div>
-            
+
           </div>
+          
           <!--product 2-->
           <div class="grid-item" #="item2">
 
+            <div class="container">
 
-            <img src="image/acoustic3 - copy.png" class="product-image">
+              <img src="image/acoustic3 - copy.png" class="product-image">
+              <div class="overlay"></div>
+              <div class="button"><a href="product-page.html"> VIEW </a></div>
 
+            </div>
             
             <div class="product-info">
 
@@ -127,9 +135,13 @@
           <!--product 3-->
           <div class="grid-item" #="item3">
 
+            <div class="container">
 
-            <img src="image/acoustic2 - copy.png" class="product-image">
+              <img src="image/acoustic2 - copy.png" class="product-image">
+              <div class="overlay"></div>
+              <div class="button"><a href="product-page.html"> VIEW </a></div>
 
+            </div>
             
             <div class="product-info">
 
@@ -149,10 +161,14 @@
           <!--product 4-->
           <div class="grid-item" #="item4">
 
+            <div class="container">
 
-            <img src="image/acoustic3 - copy.png" class="product-image">
+              <img src="image/acoustic3 - copy.png" class="product-image">
+              <div class="overlay"></div>
+              <div class="button"><a href="product-page.html"> VIEW </a></div>
 
-            
+            </div>
+
             <div class="product-info">
 
               <div class="price-and-name">
@@ -171,10 +187,14 @@
           <!--product 5-->
           <div class="grid-item" #="item5">
 
+            <div class="container">
 
-            <img src="image/acoustic2 - copy.png" class="product-image">
+              <img src="image/acoustic2 - copy.png" class="product-image">
+              <div class="overlay"></div>
+              <div class="button"><a href="product-page.html"> VIEW </a></div>
 
-            
+            </div>
+
             <div class="product-info">
 
               <div class="price-and-name">
@@ -193,10 +213,14 @@
           <!--product 6-->
           <div class="grid-item" #="item6">
 
+            <div class="container">
 
-            <img src="image/acoustic3 - copy.png" class="product-image">
+              <img src="image/acoustic3 - copy.png" class="product-image">
+              <div class="overlay"></div>
+              <div class="button"><a href="product-page.html"> VIEW </a></div>
 
-            
+            </div>
+
             <div class="product-info">
 
               <div class="price-and-name">
@@ -215,9 +239,13 @@
           <!--product 7-->
           <div class="grid-item" #="item7">
 
+            <div class="container">
 
-            <img src="image/acoustic2 - copy.png" class="product-image">
+              <img src="image/acoustic2 - copy.png" class="product-image">
+              <div class="overlay"></div>
+              <div class="button"><a href="product-page.html"> VIEW </a></div>
 
+            </div>
             
             <div class="product-info">
 
@@ -237,10 +265,14 @@
           <!--product 8-->
           <div class="grid-item" #="item8">
 
+            <div class="container">
 
-            <img src="image/acoustic3 - copy.png" class="product-image">
+              <img src="image/acoustic3 - copy.png" class="product-image">
+              <div class="overlay"></div>
+              <div class="button"><a href="product-page.html"> VIEW </a></div>
 
-            
+            </div>
+
             <div class="product-info">
 
               <div class="price-and-name">
@@ -259,9 +291,13 @@
           <!--product 9-->
           <div class="grid-item" #="item9">
 
+            <div class="container">
 
-            <img src="image/acoustic2 - copy.png" class="product-image">
+              <img src="image/acoustic2 - copy.png" class="product-image">
+              <div class="overlay"></div>
+              <div class="button"><a href="product-page.html"> VIEW </a></div>
 
+            </div>
             
             <div class="product-info">
 
@@ -292,7 +328,37 @@
           <a href="#" class="pagination-button">&raquo;</a>
         </div>
 
-      </div><!--product list closing-->
+      </div><!--product list closing-->   
+      
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+          <img src="image/acoustic2.png" class="add-image">
+          <div class="product-info">
+      
+            <div class="price-and-name">
+              <p id="product-name">Product Name</p>
+              <p id="product-price">$3,499</p>
+            </div>
+      
+            <div class="product-description">
+              <p>Lorem  dolor sit amet, consetetur sadipscing elitr.Lorem  dolor amet.</p>
+              </div>
+
+          </div>
+            
+        </div>
+      
+      </div>
+      
+      </div>
+      
+       <script src="list.js">
+      </script>
 
     </section>
 
@@ -387,19 +453,16 @@
         <div class="r-flex-container">
         
           <!--product 1-->
-          <div class="container">
-            <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="" />
-            <p class="title">card title</p>
-            <div class="overlay"></div>
-            <div class="button"><a href="#"> BUTTON </a></div>
+          <div class="forth-container">
+            <img src="image/discover.png" class="forth-img"alt="" />
+            <p class="title">title</p>
+            <div class="forth-button"><a href="product-page.html"> DISCOVER </a></div>
           </div>
-
 
         </div><!-- recommend flex container closing-->
 
       </div><!--feature product closing-->
 
-    </section>
     </section>
 
   </main>

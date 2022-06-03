@@ -1,6 +1,6 @@
 /*learn more button js*/
 function viewFunction(){
-  document.getElementsByClassName('view').onclick=location.href ="product list.html"
+  document.getElementsByClassName('view').onclick=location.href ="product-page.html"
 }
 
 /*learn more button js*/
@@ -27,3 +27,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
