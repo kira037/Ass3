@@ -35,7 +35,6 @@
 
 
   /*transparency and blend of background image and colour*/
-
 body{
   background-color: #1C2427;
   background-size:contain;
@@ -52,15 +51,18 @@ main .first section link ,a{
   text-align: center;
 }
 
+/*first section link style*/
 main .nav{
   text-decoration: underline;
 }
 
+/* guitar image background in first section*/
 .background-image{
   opacity: 50%;
   margin-top: -25%;
 }
 
+/* background guitar image croping*/
 .background {
   position: relative;
   text-align: center;
@@ -69,7 +71,8 @@ main .nav{
   overflow: hidden;
   margin: 0%;
 }
-  
+ 
+/* centering link above background guitar image*/
 .centered {
   position: absolute;
   top: 50%;
@@ -78,6 +81,8 @@ main .nav{
   color: #6BCCF2;
 }
 /*end of first section*/
+
+
 
 
 
@@ -92,18 +97,20 @@ main .nav{
   display: flex;
 }
 
+/* filter on the left side (include sort by) */
 .filter-placeholder{
   width: 100%;
-  height: 1000px;
+  height: 1050px;
   background-color: #757777;
 }
 
-
+/* sort by functioning */
 label, #sort, .sort-by{
   color: #f2f2f2c6;
   background-color: #323B41;
 }
 
+/* sort by position */
 .sort-by{
   position: relative;
   text-align: left;
@@ -122,12 +129,15 @@ label, #sort, .sort-by{
   row-gap: 4%;
 }
 
+/*aligning image and product info*/
 .grid-item{
   text-align: center;
 }
 
-/*altering grid column when displayed on smaller screen*/
+/*responsive*/
 @media (max-width: 1100px) {
+
+  /*altering grid column when displayed on smaller screen*/
   .grid-item {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -142,10 +152,12 @@ label, #sort, .sort-by{
     row-gap: 3%;
   }
 
+  /*limit product number*/
   .grid-container :nth-child(n+4){
     display: none;
   }
 
+  /*filter position changed*/
   .second-section{
     margin: 0%;
     background-color: #323B41;
@@ -154,11 +166,15 @@ label, #sort, .sort-by{
     display: flex;
     flex-direction: column;
   }
+
+  /*filter height changed*/
   .filter-placeholder{
     width: 100%;
     height: 100px;
     background-color: #757777;
   }
+
+  /*repositioning of sort by on smaller screen*/
   .sort-by{
     text-align: left;
     padding-left: 5%;
@@ -167,7 +183,7 @@ label, #sort, .sort-by{
 }
 
 
-/*resizing and radius border of guitar image*/
+/*resizing and round edge of guitar image*/
 .product-image{
   width: 100%;
   padding: 5% 2% 5% 2%;
@@ -177,22 +193,26 @@ label, #sort, .sort-by{
   cursor: pointer;
 }
 
+/*hover over effect of product image*/
 .product-image:hover{
   opacity: 50%;
   box-shadow: #121718ec;
 }
 
+/*making product name easier to click*/
 #product-name, #product-price{
   padding-top: 1%;
   padding-bottom: 1%;
 }
 
+/*hover over effect of product name*/
 #product-name:hover{
   cursor: pointer;
   color: #f2f2f276;
   text-shadow: #000000;
 }
 
+/*aligning product name and price on same line*/
 .price-and-name{
   display: flex;
   justify-content: space-between;
@@ -200,6 +220,7 @@ label, #sort, .sort-by{
   color: #f2f2f2de;
 }
 
+/*aligning product description and add button on same line*/
 .product-info .product-description{
   text-align: left;
   display: flex;
@@ -210,7 +231,7 @@ label, #sort, .sort-by{
   top: -25px;
 }
 
-/*format of learn more button and read more button in section 3*/
+/*format and repositioning of add button*/
 .add {
   font-family:var(--font-family-maven_pro);
   color: #F2F2F2;
@@ -226,14 +247,207 @@ label, #sort, .sort-by{
   top: 30%;
 }
 
+/*refining responsive layout in smaller screen*/
 .add-placeholder{
   padding-left: 10%;
   width: 5%;
 }
 
-/* when hover over learn more button, it changes color*/
+/* opacity changes when hover over on add button*/
 .add:hover {
   opacity: 50%;
   box-shadow: 50px #000000;
 } 
-/*end of section 2-feature products*/
+
+.pagination{
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+/*end of section 2 product list*/
+
+
+
+
+
+
+
+
+/* section 3 featured product*/
+ .third-section{
+  width: 100%;
+  background-color: #262A2C;
+  margin-top: 0%;
+  padding-bottom: 7%;
+}
+
+.feature_product{
+  padding: 5% 10%;
+  position: relative;
+  top: 0px;
+  padding-bottom: 7%;
+}
+
+.show1{
+  position: relative;
+  top: 50%;
+  right: 1120%;
+  width: 600%;
+}
+
+.show2{
+  position: relative;
+  top: 50%;
+  left: 1120%;
+  width: 600%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*format of each guitar grid for feature product*/
+.flex-item{
+  padding: 0.5%;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+
+  /*altering grid column when displayed on smaller screen*/
+  .flex-container :nth-child(2n){
+    display: none;
+  }
+
+  .f-product-image :hover{
+    opacity: 50%;
+  }
+
+}
+
+/*background for each guitar in feature product*/
+.third-section article{
+  background-color: #757777;
+  width: 100%;
+  height: 110%;
+  text-align: center;
+}
+
+.feature_product h3, article p{
+  color: #F2F2F2;
+}
+
+/*resizing and repositioning guitar image*/
+article>img{
+  width: 120%;
+  margin-top: 10%;
+  position: relative;
+  right: 10%;
+}
+
+.p2{
+  position: relative;
+  bottom: 15px;
+}
+
+/*format of learn more button and read more button in section 3*/
+.view , .discover{
+  font-family:var(--font-family-maven_pro);
+  color: aliceblue;
+  border: none;
+  background-color: #006dad71; 
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding:  3% 6%; 
+  font-size: 13px; 
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* when hover over learn more button, it changes color*/
+.view:hover {
+opacity: 50%;
+} 
+/*end of section 3-feature products*/
+
+
+
+
+
+
+
+
+/*section 4 recommend for you*/
+.forth-section{
+  width: 100%;
+  background-color: #323B41;
+  margin-top: 0%;
+  padding-bottom: 7%;
+}
+
+.recommend-for-you{
+  padding: 5% 10%;
+  position: relative;
+  top: 0px;
+}
+
+.recommend-for-you h3{
+  color: #F2F2F2;
+}
+
+
+.r-flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+
+
+
+
+.container {
+  position: relative;
+}
+
+
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+.forth-section img {
+  position: absolute;
+  width: 30%;
+  left: 0;
+}
+
+
+.button {
+  position: absolute;
+  width: 300px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.container:hover .button {
+  opacity: 1;
+}
