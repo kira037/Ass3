@@ -78,11 +78,16 @@ body{
     font-weight: 100;
 }
 
-table .link_to_shop{
+table .link_to_shop, .link_to_vr{
     padding-right: 2%;
     cursor: pointer;
     color: aliceblue;
     text-decoration: underline;
+}
+
+table .link_to_vr a:visited{
+  color: aliceblue;
+  text-decoration: underline;
 }
 
 /*quick link to see our shop format*/
@@ -248,6 +253,10 @@ display:block;
 
 
 /*section 4-vr shop tour*/
+
+html {
+  scroll-behavior: smooth;
+}
 
 .forth-section{
   width: 100%;
