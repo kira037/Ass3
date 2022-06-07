@@ -112,10 +112,10 @@ right: 17%;
     height: 100%; 
   }
 
-  .column2{
-    padding-right: 50px;
-  }
-  
+.description{
+  padding-right: 50px;
+}
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
@@ -219,6 +219,13 @@ right: 17%;
   margin-top: 0px;
 }
 
+hr{
+  position: relative;
+  bottom: 3%;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  margin-top: 0%;
+}
+
 .adjustment{
   display: flex;
 }
@@ -227,7 +234,7 @@ right: 17%;
 #color{
   color: black;
   background-color: #8BBCD4;
-  padding: 1% 2%;
+  padding: 2% 2%;
 }
 
 /* sort by position */
@@ -242,11 +249,21 @@ right: 17%;
   width: 100px;
   }
 
+  .quantity-field{
+    background-color: #8bbcd4d3;
+    border: 1px solid var(--dove-gray);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.625rem;
+    width: 6.3rem;
+    height: 1rem;
+  }
+
 
 .add {
   font-family:var(--font-family-maven_pro);
   color: #F2F2F2;
-  border: none;
+  border: 1px rgba(0, 0, 0, 0.266);
   border-radius: 25px;
   background-color: #006FAD; 
   cursor: pointer; /* Add a mouse pointer on hover */
@@ -260,7 +277,7 @@ right: 17%;
 
 /*refining responsive layout in smaller screen*/
 .add-placeholder{
-  padding-left: 8%;
+  padding-left: 5%;
   width: 5%;
 }
 
@@ -269,3 +286,89 @@ right: 17%;
   opacity: 50%;
   box-shadow: 50px #000000;
 } 
+
+.support-payment{
+  position: relative;
+  left: 72%;
+  bottom: 8rem;
+}
+
+
+.pay-last{
+  width: 9%;
+  opacity: 50%;
+}
+.pay{
+  width: 7%;
+  opacity: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 10%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*section 4 support */
+.forth-section{
+  width: 100%;
+  background-color: #323B41;
+  padding-bottom: 7%;
+}
+
+.support{
+  padding: 5% 10%;
+  position: relative;
+  top: 0px;
+  color: #F2F2F2;
+}
+
+
+.support-icon{
+  float: left;
+}
+
+.support-icon{
+  width: 120px;
+}
+
+.support-text{
+  float: right;
+}
+
+.forth-section .column1, .column2{
+  padding-right: 5%;
+}
