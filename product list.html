@@ -105,6 +105,7 @@
             </div>
 
           </div>
+          
           <!--product 2-->
           <div class="grid-item" #="item2">
 
@@ -333,26 +334,19 @@
       <div id="myModal" class="modal">
       
         <!-- Modal content -->
-        <div class="modal-content">
+        <div class="modal-content" style="width:300px; background-color: #BCCAD3;">
           <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-          <img src="image/acoustic2.png" class="add-image">
-          <div class="product-info">
-      
-            <div class="price-and-name">
-              <p id="product-name">Product Name</p>
-              <p id="product-price">$3,499</p>
-            </div>
-      
-            <div class="product-description">
-              <p>Lorem  dolor sit amet, consetetur sadipscing elitr.Lorem  dolor amet.</p>
-              </div>
-
+          <img src="icon/successful.png" alt="" class="successful">
+          <p>Item successfully added to cart.</p>
+          <div class="flex-parent jc-center">
+            <button class="modal-button1"><a href="product list.html" class="modal-link1">Back to Shop</a></button>
+          </div>
+          
+          <div class="flex-parent jc-center">
+            <button class="modal-button2"><a href="cart.html" class="modal-link2">Checkout</a></button>
           </div>
             
         </div>
-      
-      </div>
       
       </div>
       
@@ -461,6 +455,9 @@
         </div><!-- recommend flex container closing-->
 
       </div><!--feature product closing-->
+      
+      <!--Return to page top-->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
 
     </section>
 

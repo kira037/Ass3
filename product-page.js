@@ -15,15 +15,7 @@ $('.product-quantity input').change( function() {
   });
 
 
-  function changeVal(el) {
-  var qt = parseFloat(el.parent().children(".qt").html());
-  var price = parseFloat(el.parent().children(".price").html());
-  var eq = Math.round(price * qt * 100) / 100;
-  
-  el.parent().children(".full-price").html( eq + "€" );
-  
-  changeTotal();      
-}
+
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -50,3 +42,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+/* return to top */
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+

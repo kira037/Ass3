@@ -315,11 +315,98 @@ label, #sort, .sort-by{
 }
 /*end of section 2 product list*/
 
+/* The Modal (background) */
+.modal {
+  text-align: center;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  padding: 20px;
+  margin-top: 5%;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
+.successful{
+  width: 40%;
+}
+
+.modal-button1 {
+  margin-top: 3%;
+  border: 1px solid #006FAD;
+  border-radius: 10px;
+  background-color: #D5E2ED; 
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding:  2% 15%; 
+  font-size: 13px; 
+  text-decoration: none;
+}
+
+.modal-link1{
+  color: #006FAD;
+}
+
+.modal-button2 {
+  margin-top: 3%;
+  border: none;
+  border-radius: 10px;
+  background-color: #006FAD; 
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding:  4% 19%; 
+  font-size: 13px; 
+  text-decoration: none;
+}
 
 
+.modal-link2{
+  color: #F2F2F2;
+}
 
+/* opacity changes when hover over on add button*/
+.modal-button1:hover {
+  opacity: 50%;
+} 
+
+.modal-button2:hover {
+  opacity: 50%;
+} 
+
+.flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
 
 
 /* section 3 featured product*/
@@ -572,48 +659,25 @@ opacity: 50%;
   opacity: 1;
 }
 
-
-
-
-
-
-
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 10%;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
+/*return to page top*/
+#myBtn {
+  font-family:var(--font-family-maven_pro);
+  color: aliceblue;
+  border: none;
+  background-color: #757777ec; 
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding:  2% 50%; 
+  font-size: 13px; 
   text-decoration: none;
-  cursor: pointer;
+  text-transform: capitalize;
+  margin-top: 15%;
+}
+
+#myBtn:hover {
+background-color: #7577777c; /* Add a dark-grey background on hover */
+}
+
+
+html{
+  scroll-behavior: smooth;
 }

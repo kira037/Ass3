@@ -23,3 +23,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+/* return to top */
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

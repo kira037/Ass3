@@ -43,6 +43,9 @@ body{
   background-position-y: 110px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 /*first section link and current page*/
 main .first section link ,a{
@@ -137,7 +140,7 @@ right: 17%;
 
 
 /*product image and play icon*/
-.product-image{
+.second-section .product-image{
     text-align: center;
     padding: 10% 2%;
     margin-top: 2%;
@@ -219,7 +222,7 @@ right: 17%;
   margin-top: 0px;
 }
 
-hr{
+.second-section-hr{
   position: relative;
   bottom: 3%;
   border: 1px solid rgba(0, 0, 0, 0.205);
@@ -305,12 +308,13 @@ hr{
 
 /* The Modal (background) */
 .modal {
+  text-align: center;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
-  top: 10%;
+  top: 0%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -320,9 +324,9 @@ hr{
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
   margin: auto;
   padding: 20px;
+  margin-top: 5%;
   border: 1px solid #888;
   width: 80%;
 }
@@ -341,6 +345,60 @@ hr{
   text-decoration: none;
   cursor: pointer;
 }
+
+
+.successful{
+  width: 40%;
+}
+
+.modal-button1 {
+  margin-top: 3%;
+  border: 1px solid #006FAD;
+  border-radius: 10px;
+  background-color: #D5E2ED; 
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding:  2% 15%; 
+  font-size: 13px; 
+  text-decoration: none;
+}
+
+.modal-link1{
+  color: #006FAD;
+}
+
+.modal-button2 {
+  margin-top: 3%;
+  border: none;
+  border-radius: 10px;
+  background-color: #006FAD; 
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding:  4% 19%; 
+  font-size: 13px; 
+  text-decoration: none;
+}
+
+
+.modal-link2{
+  color: #F2F2F2;
+}
+
+/* opacity changes when hover over on add button*/
+.modal-button1:hover {
+  opacity: 50%;
+} 
+
+.modal-button2:hover {
+  opacity: 50%;
+} 
+
+.flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
 
 /*section 4 support */
 .forth-section{
@@ -371,4 +429,187 @@ hr{
 
 .forth-section .column1, .column2{
   padding-right: 5%;
+}
+
+.section-break{
+  position: relative;
+  bottom: 3%;
+  border: 1px solid #A2BCCC;
+  margin-top: 0%;
+}
+
+
+
+
+/*section 5layout of whole product list grid*/
+
+.recently-viewed{
+  position: relative;
+  width: 30px;
+  top: 0.3rem;
+  padding-right: 10px;
+
+}
+
+.recent-heading{
+  padding: 5% 10%;
+  position: relative;
+  top: 0px;
+  color: #F2F2F2;
+}
+
+.grid-container {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(3,3fr);
+  column-gap: 4.5%;
+  row-gap: 4%;
+}
+
+/*aligning image and product info*/
+.grid-item{
+  text-align: center;
+}
+
+/*responsive*/
+@media (max-width: 1100px) {
+
+  /*altering grid column when displayed on smaller screen*/
+  .grid-item {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .grid-container {
+    width: 100%;
+    padding-left: 10%;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 5%;
+    row-gap: 3%;
+  }
+
+  /*limit product number*/
+  .grid-container :nth-child(n+4){
+    display: none;
+  }
+
+  /*filter position changed*/
+  .fifth-section{
+    margin: 0%;
+    background-color: #323B41;
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/*resizing and round edge of guitar image*/
+.fifth-section .product-image{
+  width: 100%;
+  padding: 5% 2% 5% 2%;
+  background-color: #757777;
+  border-radius: 10px;
+  margin: 0%;
+  cursor: pointer;
+}
+
+
+/*hover over effect of item*/
+.container {
+  position: relative;
+}
+
+/*darker when hover over*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98.6%;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.459);
+}
+
+
+/*format of view btn, not displaying first*/
+.button {
+  position: absolute;
+  width: 300px;
+  left:40px;
+  top: 72px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+/*display when hover*/
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.container:hover .button {
+  opacity: 1;
+}
+
+/*making product name easier to click*/
+#product-name, #product-price{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/*hover over effect of product name*/
+#product-name:hover{
+  cursor: pointer;
+  color: #f2f2f276;
+  text-shadow: #000000;
+}
+
+/*aligning product name and price on same line*/
+.price-and-name{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+
+.price-and-name :first-child{
+  color: #f2f2f2de;
+}
+
+.price-and-name :last-child{
+  color: #31B5FF;
+}
+
+/*format of return to top*/
+/*return to page top*/
+#myBtn {
+  font-family:var(--font-family-maven_pro);
+  color: aliceblue;
+  border: none;
+  background-color: #757777ec; 
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding:  2% 50%; 
+  font-size: 13px; 
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-top: 10%;
+}
+
+#myBtn:hover {
+background-color: #7577777c; /* Add a dark-grey background on hover */
 }
