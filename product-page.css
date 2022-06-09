@@ -91,7 +91,10 @@ right: 17%;
 
 
 
-/*second-section*/
+
+
+
+/*section 2 main info of product*/
 .second-section{
     width: 100%;
     margin-top: 0%;
@@ -150,20 +153,8 @@ right: 17%;
     z-index: 1;
     width: 80%;
     background-color: #DFEFEF;
-    filter: blur(2px);
   }
   
-  .play-icon{
-    width: 5%;
-    padding: 3%;
-    width: 8%;
-    position:absolute;
-    left: 20%;
-    z-index: 9;
-    margin-top: 0%;
-    cursor: pointer;
-    border: #1C2427 2px;
-  }
 
   .small-image {
     width: 10%;
@@ -306,6 +297,7 @@ right: 17%;
   opacity: 50%;
 }
 
+
 /* The Modal (background) */
 .modal {
   text-align: center;
@@ -346,7 +338,7 @@ right: 17%;
   cursor: pointer;
 }
 
-
+/*tick icon in modal*/
 .successful{
   width: 40%;
 }
@@ -398,6 +390,150 @@ right: 17%;
 .jc-center {
   justify-content: center;
 }
+/*end of modal format*/
+
+
+
+
+
+/*section 3 info tab*/
+.third-section{
+  width: 100%;
+  background-color: #B6C6CF;
+  padding-bottom: 7%;
+}
+
+
+
+.tabs{
+  width:100%;
+  height:auto;
+  margin:0 auto;
+}
+
+/* tab list item */
+.tabs .tabs-list{
+  display: flex;
+  justify-content: space-between;
+  list-style:none;
+  margin:0px;
+  padding:0px;
+}
+.tabs .tabs-list li{
+  width:35%;
+  float:left;
+  margin:0px;
+  margin-right:2px;
+  padding:10px 5px;
+  text-align: center;
+  background-color:#BFCCD3;
+  border: 1px solid #707070b3;
+}
+.tabs .tabs-list li:hover{
+  cursor:pointer;
+}
+.tabs .tabs-list li a{
+  text-decoration: none;
+  color:#0000006c;
+}
+
+/* Tab content section */
+.tabs .tab{
+  display:none;
+  width:100%;
+  min-height:250px;
+  height:auto;
+  border-radius:3px;
+  padding:20px 5%;
+  background-color:#B6C6CF;
+  color:#0D0D0D;
+  clear:both;
+}
+.tabs .tab h3{
+  border-bottom:3px solid #006FAD;
+  letter-spacing:1px;
+  font-weight:bold;
+  padding:5px;
+}
+.tabs .tab p{
+  line-height:20px;
+  letter-spacing: 1px;
+}
+
+/* When active state */
+.active{
+  display:block !important;
+}
+.tabs .tabs-list li.active{
+  background-color:#89C0DA !important;
+  color:black !important;
+}
+.active a{
+  color:black !important;
+}
+
+
+/*review tab*/
+.fa {
+  font-size: 25px;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f170;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04aa6dd4;}
+.bar-4 {width: 30%; height: 18px; background-color: #2195f3c7;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bbd4cf;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9900d3;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336d4;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+
+
+/*end of section 3 info tab*/
+
+
+
+
 
 
 /*section 4 support */

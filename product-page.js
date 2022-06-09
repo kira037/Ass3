@@ -16,7 +16,7 @@ $('.product-quantity input').change( function() {
 
 
 
-
+//section 2 modal
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -42,6 +42,28 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+//section 3 info tab
+$(document).ready(function(){
+
+  $(".tabs-list li a").click(function(e){
+     e.preventDefault();
+  });
+
+  $(".tabs-list li").click(function(){
+     var tabid = $(this).find("a").attr("href");
+     $(".tabs-list li,.tabs div.tab").removeClass("active");   // removing active class from tab
+
+     $(".tab").hide();   // hiding open tab
+     $(tabid).show();    // show tab
+     $(this).addClass("active"); //  adding active class to clicked tab
+
+  });
+
+});
+//end of section 3 info tab
+
 
 /* return to top */
 function topFunction() {
