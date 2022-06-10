@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluedog Guitar-Checkout</title>
+    
+    <!-- general css for whole page-->
+    <link rel="stylesheet" href="checkout.css">
+    
+    <!--general js for whole page-->
+    <script src="checkout.js"></script>
+
+    <!--reusable footer-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <header>
+
+        <!--Navigation bar-->
+        <div id="header-placeholder">
+        </div>
+        <script>
+          $(function(){
+            $("#header-placeholder").load("header.html");
+          });
+        </script>
+    
+      </header>
+
+    <main>
+
+        <section class="first-section">
+            <div class="background">
+                <div class="centered">
+                <h3>Checkout</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-section">
+            <div class="row">
+
+                <div class="column1">
+                    <div class="link">
+                        <p class="second section link"><a href="cart.html" class="nav">Cart</a>><a href="checkout.html" class="nav">Information</a>><a href="payment.html" class="nav">Payment</a></p>
+                    </div>
+                    <div class="wrapper">
+                        <div class="container">
+                            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                                <h1>
+                                    <i class="fas fa-shipping-fast"></i>
+                                    Contact Information
+                                </h1>
+                                <div class="name">
+                                    <div>
+                                        <label for="f-name">First Name:</label>
+                                        <input type="text" name="fname">
+                                    </div>
+                                    <div>
+                                        <label for="l-name">Last Name:</label>
+                                        <input type="text" name="l-name">
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <div>
+                                        <label for="f-name">Phone:</label>
+                                        <input type="text" name="fname">
+                                    </div>
+                                    <div>
+                                        <label for="l-name">Email:</label>
+                                        <input type="text" name="l-name">
+                                    </div>
+                                </div>
+
+                                <h1>
+                                    <i class="far fa-credit-card"></i> Shipping Address
+                                </h1>
+                                <div class="name">
+                                    <div>
+                                        <label for="city">Street:</label>
+                                        <input class="street-address" type="text" name="city" size="20">
+                                    </div>
+                                    <div>
+                                        <label for="city">City:</label>
+                                        <input type="text" name="city" size="20">
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <div>
+                                        <label for="state">State/Province:</label>
+                                        <input type="text" name="state" size="20">
+                                    </div>
+                                    <div>
+                                        <label for="zip">Zip/Postcode:</label>
+                                        <input type="text" name="zip" size="20">
+                                    </div>
+                                </div>
+                            
+                                <input type="submit" value="Proceed to Payment" href="confirm.html">
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="column2">
+                    <article>
+                        <img src="image/acoustic2.png" alt="">
+                    </article>
+                        
+                </div>
+
+                        
+            </div>
+      </section>
+
+    </main>
+    
+    
+    <footer>
+
+        <div id="footer-placeholder">
+        </div>
+        <script>
+            $(function(){
+            $("#footer-placeholder").load("footer.html");
+           });
+        </script>
+
+    </footer>
+    
+</body>
+</html>

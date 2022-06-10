@@ -484,7 +484,7 @@ aside {
     padding: 0;
   }
   .summary {
-    margin-top: 1.25rem;
+    margin-top: -200px;
     position: relative;
   }
 }

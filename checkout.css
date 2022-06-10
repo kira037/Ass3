@@ -1,0 +1,214 @@
+/* General reference of style*/
+:root {
+    --black: 
+  rgba(0, 0, 0, 1);
+      --background-blue: 
+  rgba(0, 73, 112, 1);
+  --highlight:
+  #31B5FF;
+    --allports-2: 
+  rgba(0, 111, 173, 1);
+  --light_blue:
+  #A2BCCC;    
+    --woodsmoke: 
+  rgba(16, 16, 16, 1);
+    --highsaturated-blue: 
+  rgba(49, 60, 202, 1);
+  --bright-blue:
+  #6BCCF2;
+  --white:
+  #F2F2F2;
+    --dove-gray: 
+  rgba(112, 112, 112, 1);
+  
+    --font-size-xs: 13px;
+    --font-size-s: 16px;
+    --font-size-m: 20px;
+    --font-size-l: 32px;
+    --font-size-h: 55px;
+  
+    --font-family-cardo: "Cardo";
+    --font-family-inkfree: "InkFree-Regular";
+    --font-family-maven_pro: "Maven Pro";
+  }
+  /* end of general reference of style*/
+
+
+  /*transparency and blend of background image and colour*/
+body{
+  background-color: #1C2427;
+  background-size:contain;
+  width: 100%;
+  height: 2900px;
+}
+.first-section{
+    background-color: #323B41;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+ 
+/* centering checkout text*/
+.centered {
+  color: #6BCCF2;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/*link and current page*/
+main .second section link ,a{
+    color: #6BCCF2;
+    padding: 5%;
+  }
+  
+  /*link style*/
+  .link a{
+      text-decoration: underline;
+      font-weight: 100;
+  }
+   
+  /* positioning link*/
+  .link {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: #6BCCF2;
+  }
+  
+  .centered p{
+  position: relative;
+  right: 17%;
+  }
+  
+  /*end of first section*/
+
+
+
+
+
+  
+/*section 2 main info of product*/
+.second-section{
+    width: 100%;
+    margin-top: 0%;
+    padding-bottom: 7%;
+    background-color: #CED6D6;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  * :not(header){
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column1{
+    float: left;
+    width: 65%;
+    margin-top: 5%;
+    height: 100%; 
+  }
+
+  .column2 {
+    float: left;
+    width: 35%;
+    margin-top: 5%;
+    height: 100%; 
+  }
+
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .column1, .column2 {
+      width: 100%;
+      height: 35%; 
+    }
+
+    .column2{
+      padding: 7%;
+    }
+
+    .wrapper{
+        width: 55%;
+    }
+  }
+
+
+
+
+
+
+  $title: #493b76;
+  
+  body {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .wrapper {
+      -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+      -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+      box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+      animation: slideUp 2000ms ease;
+  }
+  
+  @keyframes slideUp {
+      0% {
+          -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+          visibility: visible;
+      }
+  
+      100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+  
+      }
+  }
+  
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+  
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name div{
+    display: flex;
+    flex-direction: column;
+}
+
+.address-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.general-address{
+    display: flex;
+    justify-content: space-between;
+}
+
+.street-address{
+    size: 50;
+}
+
+
+
+
+
