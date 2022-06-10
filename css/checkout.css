@@ -59,8 +59,8 @@ body{
 
 /*link and current page*/
 main .second section link ,a{
-    color: #6BCCF2;
-    padding: 5%;
+    color: #4599ba;
+    padding: 15%;
   }
   
   /*link style*/
@@ -75,7 +75,7 @@ main .second section link ,a{
     top: 0%;
     left: 10%;
     transform: translate(-50%, -50%);
-    color: #6BCCF2;
+    color: #4599ba;
   }
   
   .centered p{
@@ -94,12 +94,11 @@ main .second section link ,a{
 .second-section{
     width: 100%;
     margin-top: 0%;
-    padding-bottom: 7%;
+    padding-bottom: 0%;
     background-color: #CED6D6;
     position: relative;
     top: 0px;
-    display: flex;
-    justify-content: space-between;
+
   }
 
   * :not(header){
@@ -133,7 +132,7 @@ main .second section link ,a{
   @media screen and (max-width: 800px) {
     .column1, .column2 {
       width: 100%;
-      height: 35%; 
+      height: 50%; 
     }
 
     .column2{
@@ -141,14 +140,16 @@ main .second section link ,a{
     }
 
     .wrapper{
-        width: 55%;
+        width: 100%;
     }
   }
 
 
 
 
-
+.wrapper hr{
+    border: 1px solid #323b416f;
+}
 
   $title: #493b76;
   
@@ -158,6 +159,8 @@ main .second section link ,a{
   }
   
   .wrapper {
+      padding-top: 5%;
+      padding-bottom: 17%;
       -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
       -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
       box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
@@ -178,10 +181,15 @@ main .second section link ,a{
       }
   }
   
+input{
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+}
+
 .container{
     margin-left: 10%;
     margin-right: 10%;
-
 }
   
 .name{
@@ -194,21 +202,91 @@ main .second section link ,a{
     flex-direction: column;
 }
 
-.address-info{
-    display: flex;
-    flex-direction: column;
+
+.column2{
+    background-color: #BCCAD3;
+    padding-bottom: 3.5%;
 }
 
-.general-address{
+.column2 .product-image{
+    width: 10%;
+}
+
+.column2 article{
     display: flex;
     justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-bottom: 1px solid #323b4167;
 }
 
-.street-address{
-    size: 50;
+.column2 .product-price{
+    color: #00415a;
+    font-weight: 800;
 }
 
 
 
+.summary{
+    margin-top: 10%;
+    padding-left: 10%;
+
+}
+
+.subtotal-title,
+.subtotal-value,
+.total-title,
+.total-value {
+  color: #111;
+  float: left;
+  width: 50%;
+}
 
 
+.price:before,
+.subtotal:before,
+.subtotal-value:before,
+.total-value:before,
+.promo-value:before {
+  content: '$';
+}
+
+.subtotal {
+    text-align: right;
+    font-weight: bold;
+  }
+
+
+  .total-title, .total-value{
+      font-weight: bold;
+      color: #00415a;
+  }
+
+
+  .return{
+    margin-top: 10%;
+    float: left;
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #006dad22;
+    border: none;
+    border-radius: 5px;
+
+  }
+
+  .payment{
+      margin-top: 10%;
+      float: right;
+      width: 30%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      background-color: #006FAD;
+      border: none;
+      border-radius: 5px;
+  }
+
+  .payment-link{
+      text-align: center;
+      color: #F2F2F2;
+  }

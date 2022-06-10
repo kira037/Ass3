@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluedog Guitar-Checkout</title>
+    
+    <!-- general css for whole page-->
+    <link rel="stylesheet" href="css/checkout.css">
+    
+    <!--general js for whole page-->
+    <script src="js/checkout.js"></script>
+
+    <!--reusable footer-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <header>
+
+        <!--Navigation bar-->
+        <div id="header-placeholder">
+        </div>
+        <script>
+          $(function(){
+            $("#header-placeholder").load("html/header.html");
+          });
+        </script>
+    
+      </header>
+
+    <main>
+
+        <section class="first-section">
+            <div class="background">
+                <div class="centered">
+                <h3>Checkout</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-section">
+            <div class="row">
+
+                <div class="column1">
+                    <div class="link">
+                        <p class="second section link"><a href="html/cart.html" class="nav">Cart</a>><a href="html/checkout.html" class="nav">Information</a>><a href="html/payment.html" class="nav">Payment</a></p>
+                    </div>
+                    <div class="wrapper">
+                        <div class="container">
+                            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                                <h1>
+                                    <i class="fas fa-shipping-fast"></i>
+                                    Payment
+                                </h1>
+                                <hr>
+                                <div class="payment-placeholder">
+                                    <img src="icon/visa.png" class="payment-image"alt="">
+                                    <img src="icon/master2.png" class="payment-image" alt="">
+                                    <img src="icon/bpay.png" class="payment-image" alt="">
+                                </div>
+                                <div class="name">
+                                    <div>
+                                        <label for="f-name">Card Number:</label>
+                                        <input type="text" name="fname">
+                                    </div>
+                                    <div>
+                                        <label for="l-name">Last Name:</label>
+                                        <input type="text" name="l-name">
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <div>
+                                        <label for="f-name">Phone:</label>
+                                        <input type="text" name="fname">
+                                    </div>
+                                    <div>
+                                        <label for="l-name">Email:</label>
+                                        <input type="text" name="l-name">
+                                    </div>
+                                </div>
+
+                                <button class="return" href="html/cart.html" >Return to Cart</button>
+                            
+
+                                <button class="payment"><a href="html/payment.html" onclick="validateForm()"class="payment-link">Proceed to Payment</a></button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="column2">
+                    <article>
+                        <img src="image/acoustic2.png" class="product-image" alt="">
+                        <div class="info">
+                            <h3 class="product-name">Product Name</h3>
+                            <p class="product-price">$3,299</p>
+                        </div>
+                        <p class="number">x2</p>
+                    </article>
+                    <article>
+                        <img src="image/acoustic3.png" class="product-image" alt="">
+                        <div class="info">
+                            <h3 class="product-name">Product Name</h3>
+                            <p class="product-price">$3,499</p>
+                        </div>
+                        <p class="number">x1</p>
+                    </article>
+
+                    <div class="summary">
+
+                        <div class="summary-total-items"><span class="total-items"></span> <h3>Summary</h3></div>
+            
+                        <div class="summary-subtotal">
+            
+                          <div class="subtotal-title">Product</div>
+                          <div class="subtotal-value final-value" id="basket-subtotal">6798.00</div>
+                          <div class="subtotal-title">GST (5%)</div>
+                          <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+                          <div class="subtotal-title">PST (7%)</div>
+                          <div class="subtotal-value final-value" id="basket-subtotal">150.00</div>
+            
+                        </div>
+                        <div class="summary-subtotal">
+            
+                            <div class="subtotal-title">Shipping(30days)</div>
+                            <div class="subtotal-value final-value" id="basket-subtotal">0</div>
+                            <div class="subtotal-title">Discount</div>
+                            <div class="subtotal-value final-value" id="basket-subtotal">0</div>
+              
+                          </div>
+            
+                        <div class="summary-delivery">
+            
+            
+                        </div>
+            
+                        <div class="summary-total">
+                          <div class="total-title">Total</div>
+                          <div class="total-value final-value" id="basket-total">7108.00</div>
+                        </div>
+        
+            
+                    </div>
+                        
+                </div>
+
+                        
+            </div>
+      </section>
+
+    </main>
+    
+    
+    <footer>
+
+        <div id="footer-placeholder">
+        </div>
+        <script>
+            $(function(){
+            $("#footer-placeholder").load("html/footer.html");
+           });
+        </script>
+
+    </footer>
+    
+</body>
+</html>
