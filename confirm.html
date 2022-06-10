@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluedog Guitar-Checkout</title>
+    
+    <!-- general css for whole page-->
+    <link rel="stylesheet" href="confirm.css">
+    
+    <!--general js for whole page-->
+    <script src="checkout.js"></script>
+
+    <!--reusable footer-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <header>
+
+        <!--Navigation bar-->
+        <div id="header-placeholder">
+        </div>
+        <script>
+          $(function(){
+            $("#header-placeholder").load("header.html");
+          });
+        </script>
+    
+      </header>
+
+    <main>
+
+        <section class="first-section">
+            <div class="background">
+                <div class="centered">
+                <h3>Checkout</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-section">
+            <div class="confirm-image">
+                <img src="icon/successful.png" alt="">
+            </div>
+            <div>
+                <h3>Your order has been successfully placed!</h3>
+            </div>
+            <button class="return" href="cart.html" ><a href="cart.html">Return to Cart</a></button>
+            <button>view order status</button>
+ 
+      </section>
+
+    </main>
+    
+    
+    <footer>
+
+        <div id="footer-placeholder">
+        </div>
+        <script>
+            $(function(){
+            $("#footer-placeholder").load("footer.html");
+           });
+        </script>
+
+    </footer>
+    
+</body>
+</html>

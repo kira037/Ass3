@@ -1,0 +1,108 @@
+/* General reference of style*/
+:root {
+    --black: 
+  rgba(0, 0, 0, 1);
+      --background-blue: 
+  rgba(0, 73, 112, 1);
+  --highlight:
+  #31B5FF;
+    --allports-2: 
+  rgba(0, 111, 173, 1);
+  --light_blue:
+  #A2BCCC;    
+    --woodsmoke: 
+  rgba(16, 16, 16, 1);
+    --highsaturated-blue: 
+  rgba(49, 60, 202, 1);
+  --bright-blue:
+  #6BCCF2;
+  --white:
+  #F2F2F2;
+    --dove-gray: 
+  rgba(112, 112, 112, 1);
+  
+    --font-size-xs: 13px;
+    --font-size-s: 16px;
+    --font-size-m: 20px;
+    --font-size-l: 32px;
+    --font-size-h: 55px;
+  
+    --font-family-cardo: "Cardo";
+    --font-family-inkfree: "InkFree-Regular";
+    --font-family-maven_pro: "Maven Pro";
+  }
+  /* end of general reference of style*/
+
+
+  /*transparency and blend of background image and colour*/
+body{
+  background-color: #1C2427;
+  background-size:contain;
+  width: 100%;
+  height: 2900px;
+}
+.first-section{
+    background-color: #323B41;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+ 
+/* centering checkout text*/
+.centered {
+  color: #6BCCF2;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+  /*end of first section*/
+
+
+  
+/*section 2 main info of product*/
+.second-section{
+    width: 100%;
+    margin-top: 0%;
+    padding-top: 7%;
+    padding-bottom: 10%;
+    background-color: #CED6D6;
+    position: relative;
+    top: 0px;
+    text-align: center;
+  }
+
+
+img{
+    width: 10%;
+    opacity: 0.9;
+}
+
+button{
+    background-color: #227eb40f;
+    border: 1px solid #006dad22;
+    padding: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #1C2427;
+    
+}
+
+button :hover{
+    opacity: 0.5;
+
+}
+
+.return{
+    width: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #006dad22;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .return :hover{
+      opacity: 50%;
+
+  }

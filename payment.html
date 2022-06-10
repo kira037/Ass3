@@ -54,39 +54,77 @@
                                     Payment
                                 </h1>
                                 <hr>
-                                <div class="payment-placeholder">
-                                    <img src="icon/visa.png" class="payment-image"alt="">
-                                    <img src="icon/master2.png" class="payment-image" alt="">
-                                    <img src="icon/bpay.png" class="payment-image" alt="">
-                                </div>
+                                <div class="method">
+
+                                    <label for="sort">Select a payment method:</label>
+                                    <select name="method" id="method" style="background-color:#f2f2f2 ; margin-bottom: 5%;">
+                          
+                                      <option value="master">Master</option>
+                                      <option value="visa">Visa</option>
+                                      <option value="bpay">Bpay</option>
+
+                          
+                                    </select>
+                          
+                                  </div>
                                 <div class="name">
                                     <div>
                                         <label for="f-name">Card Number:</label>
-                                        <input type="text" name="fname">
-                                    </div>
-                                    <div>
-                                        <label for="l-name">Last Name:</label>
-                                        <input type="text" name="l-name">
+                                        <input type="text" name="fname" size="40">
                                     </div>
                                 </div>
                                 <div class="name">
+                                    <div class="method">
+
+                                        <label for="method">Expire Year:</label>
+                                        <select name="method" id="method" style="background-color:#f2f2f2 ;">
+                              
+                                          <option value="master">2022</option>
+                                          <option value="visa">2023</option>
+                                          <option value="bpay">2024</option>
+                                          <option value="bpay">2025</option>
+                                          <option value="bpay">2026</option>
+                                          <option value="bpay">2027</option>
+                                          <option value="bpay">2028</option>
+    
+                              
+                                        </select>
+                              
+                                      </div>
+                                      <div class="method">
+
+                                        <label for="method">Expire Month:</label>
+                                        <select name="method" id="method" style="background-color:#f2f2f2 ;">
+                              
+                                          <option value="master">01</option>
+                                          <option value="visa">02</option>
+                                          <option value="bpay">03</option>
+                                          <option value="bpay">04</option>
+                                          <option value="bpay">05</option>
+                                          <option value="bpay">06</option>
+                                          <option value="bpay">07</option>
+                                          <option value="bpay">08</option>
+                                          <option value="bpay">09</option>
+                                          <option value="bpay">10</option>
+                                          <option value="bpay">11</option>
+                                          <option value="bpay">12</option>
+    
+                              
+                                        </select>
+                              
+                                      </div>
                                     <div>
-                                        <label for="f-name">Phone:</label>
-                                        <input type="text" name="fname">
-                                    </div>
-                                    <div>
-                                        <label for="l-name">Email:</label>
-                                        <input type="text" name="l-name">
+                                        <label for="l-name">CVC:</label>
+                                        <input type="text" name="l-name" style="background-color:#f2f2f2 ;">
                                     </div>
                                 </div>
 
-                                <button class="return" href="cart.html" >Return to Cart</button>
-                            
-
-                                <button class="payment"><a href="payment.html" onclick="validateForm()"class="payment-link">Proceed to Payment</a></button>
+                                <button class="payment"><a href="confirm.html" onclick="validateForm()"class="payment-link">Place Order</a></button>
                             </form>
+                            <button class="return"><a href="checkout.html" class="payment-link">Return to Information</a></button>
                         </div>
                     </div>
+                    <p class="thank" style="padding-left: 10%; color: #f2f2f2ad; padding-top: 5%;"> Thank you for choosing Bluedog Guitar!</p>
 
 
                 </div>

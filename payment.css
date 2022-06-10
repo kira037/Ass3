@@ -144,7 +144,7 @@ main .second section link ,a{
     }
   }
 
-.payment-placeholder img{
+img{
     width: 20px;
 }
 
@@ -162,7 +162,7 @@ main .second section link ,a{
   
   .wrapper {
       padding-top: 5%;
-      padding-bottom: 17%;
+      padding-bottom: 30%;
       -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
       -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
       box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
@@ -291,4 +291,14 @@ input{
   .payment-link{
       text-align: center;
       color: #F2F2F2;
+  }
+
+  select{
+    color: #f2f2f2bd;
+  }
+
+
+  .column1 .thank{
+    padding-left: 10%;
+    color: #f2f2f2ad;
   }
